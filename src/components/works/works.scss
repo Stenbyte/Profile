@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .works {
   background-color: crimson;
   display: flex;
@@ -8,6 +9,9 @@
     height: 50px;
     position: absolute;
     cursor: pointer;
+    @include mobile {
+      display: none;
+    }
 
     &.left {
       left: 100px;
@@ -24,11 +28,19 @@
     position: absolute;
     left: 0;
     transition: all 1s ease-in-out;
+    @include mobile {
+      height: 90vh;
+      flex-direction: column;
+      justify-content: center;
+    }
     .container {
       width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
+      @include mobile {
+        width: 100vw;
+      }
 
       .item {
         width: 700px;
@@ -38,6 +50,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include mobile {
+          width: 90%;
+          height: 150px;
+          margin: 5px 0;
+        }
 
         .left {
           flex: 4;
@@ -45,12 +62,21 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          @include mobile {
+            height: 25vh;
+            align-items: stretch;
+          }
           .leftContainer {
             width: 90%;
             height: 70%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @include mobile {
+              height: 23vh;
+              padding-left: 5px;
+            }
+
             .imgContainer {
               width: 40px;
               height: 40px;
@@ -59,15 +85,31 @@
               display: flex;
               align-items: center;
               justify-content: center;
+              @include mobile {
+                background-color: rgb(249, 186, 186);
+                width: 30px;
+                height: 30px;
+              }
               img {
                 width: 25px;
+                @include mobile {
+                  width: 15px;
+                }
               }
             }
             h2 {
               font-size: 20px;
+              @include mobile {
+                font-size: 10px;
+              }
             }
             p {
               font-size: 13px;
+              @include mobile {
+                font-size: 10px;
+                overflow: auto;
+                height: 40px;
+              }
             }
             span {
               font-size: 12px;
@@ -83,6 +125,9 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          @include mobile {
+            overflow: hidden;
+          }
           img {
             width: 400px;
             transform: rotate(-10deg);

@@ -1,6 +1,12 @@
+@import "../../global.scss";
+
 .intro {
   background: linear-gradient(#a8f9ff, #8f6593);
   display: flex;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
   .left {
     flex: 0.5;
     overflow: hidden;
@@ -15,6 +21,9 @@
       float: right;
       img {
         width: fit-content;
+        @include mobile {
+          width: 100vw;
+        }
       }
     }
   }
@@ -28,15 +37,24 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include mobile {
+        padding-left: 0;
+      }
       h1 {
         font-size: 60px;
         margin: 10px 0;
+        @include mobile {
+          font-size: 40px;
+        }
       }
       h2 {
         font-size: 35px;
       }
       h3 {
         font-size: 30px;
+        @include mobile {
+          font-size: 20px;
+        }
         span {
           font-size: inherit;
           color: crimson;
