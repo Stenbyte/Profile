@@ -5,6 +5,7 @@ export default function PortfolioList({ title, id, active, setSelected }) {
     <li
       className={active ? "portfolioList active" : "portfolioList"}
       onClick={() => setSelected(id)}
+      key={id}
     >
       {title}
     </li>

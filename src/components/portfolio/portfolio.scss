@@ -4,9 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   h1 {
     font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: $textColor;
     @include mobile {
       font-size: 20px;
     }
@@ -18,7 +22,9 @@
     display: flex;
     @include mobile {
       flex-wrap: wrap;
-      margin: 10px 0;
+      margin: 5px 0;
+      padding: 10px;
+      height: 80px;
       justify-content: center;
     }
   }

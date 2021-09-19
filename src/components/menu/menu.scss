@@ -1,41 +1,45 @@
 @import "../../global.scss";
 
 .menu {
-  width: 300px;
+  width: 23vw;
   height: 100vh;
   background-color: $mainColor;
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -23vw;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 1s ease-in-out;
+  @include mobile {
+    width: 60vw;
+    right: -60vw;
+  }
   &.active {
     right: 0;
     @include mobile {
-      right: -100px;
+      right: 0;
     }
   }
   ul {
     margin-top: 0;
     padding: 0;
     list-style: none;
-    font-size: 30px;
-    font-weight: 300;
-    color: white;
+    color: #fffcff;
     width: 60%;
     li {
       margin-bottom: 40px;
       a {
-        font-size: inherit;
-        color: inherit;
+        // font-size: inherit;
+        color: #fffcff;
+        font-size: 30px;
+        font-weight: 300;
         text-decoration: none;
-      }
-      &:hover {
-        font-weight: 400;
+        @include mobile {
+          font-size: 0.8rem;
+        }
       }
     }
   }

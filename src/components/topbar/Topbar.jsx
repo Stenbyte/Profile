@@ -1,6 +1,6 @@
 import React from "react";
 import "./topbar.scss";
-import { Person, Mail } from "@material-ui/icons";
+import { Mail } from "@material-ui/icons";
 import Logo from "../../img/logo.png";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
@@ -12,8 +12,22 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <img src={Logo} alt="logo" />
           </a>
           <div className="itemContainer">
-            <Person className="icon" />
-            <span>+358406687250</span>
+            <a
+              href="https://linkedin.com/in/sten-scheifel-2b4697168/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <div className="itemContainer">
+            <a
+              href="https://github.com/Stenbyte"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-github"></i>
+            </a>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
