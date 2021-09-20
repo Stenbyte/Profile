@@ -17,6 +17,25 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         <li onClick={() => setMenuOpen(!menuOpen)}>
           <a href="#works">CERTIFICATES</a>
         </li>
+        <li onClick={() => setMenuOpen(!menuOpen)}>
+          <a
+            href="https://linkedin.com/in/sten-scheifel-2b4697168/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              className="fab fa-linkedin-in"
+              style={{ paddingRight: "10px" }}
+            ></i>
+            <a
+              href="https://github.com/Stenbyte"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+          </a>
+        </li>
       </ul>
     </div>
   );

@@ -15,21 +15,21 @@ export default function About() {
       <i className="fas fa-terminal"></i>
       <div className="container">
         <p>
-          Ever since i was a child, i met my first gaming console sega! Since
-          that time i had a lot of communications with computers, like Dial-up
-          internet access, cleaning CD-Rom because of compact disc blew up
-          suddenly😅. I felt like a true sorcerer, every problem that ocured on
-          my way was solved with passion and commitment.As i got older, i tried
-          many different occupations. Main goal, was to be happy of my
-          craft.World wide web was evolving alongside, i've lost my connection
-          with that and was just a simple user. Since last year january i
-          decided to rebind interrelation with old friend. I've have joined Full
-          Stack Web Development Programm(React and Nodejs majors) at Business
-          College Helsinki.It is a full-time 17-months intensive programm, which
-          covers Front and Back End. Currently i'm on my finish line to
-          graduate, i'm doing my internship at Siciliamia startup.We are using
-          React, Material frameworks, firebase and contextApi. Currently i'm
-          looking forward to develop myself as a front end professional.{" "}
+          Hi there, I'm young 34 years old aspiring Frontend developer. I came
+          into this industry because of my big interest and passion for it. And
+          I'm extremely happy that I lost my previous job due to Covid-19 and
+          was kind of forced to change my career and finally study something I
+          have been always dreaming of before. I have completed Full Stack Web
+          Development Programm(React and Nodejs majors) at Business College
+          Helsinki. It is a full-time 17-months intensive program, which covers
+          Front and Back End. When I just started my studies I was a complete
+          beginner. My toughest challenge was to digest all the information and
+          now when I look at my spare-time projects, broad and serious tasks
+          that are being delegated to me during my internship, I have become
+          indeed confident of my skills and proud of my achievements. Currently,
+          I'm focusing on building full-stack projects using React, Firebase,
+          Nodejs, MongoDb, express, Sass, MUI, styled components, and others.
+          Please take a look at my projects below.
         </p>
       </div>
       <i className="fas fa-plug"></i>

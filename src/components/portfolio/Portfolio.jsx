@@ -5,17 +5,17 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import { JSPortfolio, ReactPortfolio, gamesPortfolio } from "../../data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("Js");
+  const [selected, setSelected] = useState("React_JS");
   const [data, setData] = useState([]);
 
   const list = [
     {
-      id: "Js",
-      title: "Javascript",
-    },
-    {
       id: "React_JS",
       title: "React",
+    },
+    {
+      id: "Js",
+      title: "Javascript",
     },
     {
       id: "games",
@@ -24,11 +24,11 @@ export default function Portfolio() {
   ];
   useEffect(() => {
     switch (selected) {
-      case "Js":
-        setData(JSPortfolio);
-        break;
       case "React_JS":
         setData(ReactPortfolio);
+        break;
+      case "Js":
+        setData(JSPortfolio);
         break;
       case "games":
         setData(gamesPortfolio);

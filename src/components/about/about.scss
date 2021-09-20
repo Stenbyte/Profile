@@ -16,76 +16,76 @@
   }
   .fa-mouse {
     top: 5rem;
-    left: 10rem;
+    left: 5rem;
   }
   .fa-robot {
     top: 10rem;
-    left: 20rem;
+    left: 10rem;
   }
   .fa-ethernet {
     top: 15rem;
-    left: 10rem;
+    left: 5rem;
   }
   .fa-keyboard {
     top: 20rem;
-    left: 20rem;
+    left: 10rem;
   }
   .fa-code {
     top: 25rem;
-    left: 10rem;
+    left: 5rem;
   }
   .fa-codepen {
     top: 30rem;
-    left: 20rem;
+    left: 10rem;
   }
   .fa-folder-open {
     top: 35rem;
-    left: 10rem;
+    left: 5rem;
   }
   .fa-user-secret {
     top: 40rem;
-    left: 20rem;
+    left: 10rem;
   }
   .fa-terminal {
     top: 45rem;
-    left: 10rem;
+    left: 5rem;
   }
   // first
   .fa-plug {
     top: 5rem;
-    right: 10rem;
+    right: 5rem;
   }
   .fa-save {
     top: 10rem;
-    right: 20rem;
+    right: 10rem;
   }
   .fa-headphones {
     top: 15rem;
-    right: 10rem;
+    right: 5rem;
   }
   .fa-satellite {
     top: 20rem;
-    right: 20rem;
+    right: 10rem;
   }
   .fa-compact-disc {
     top: 25rem;
-    right: 10rem;
+    right: 5rem;
   }
   .fa-node {
     top: 30rem;
-    right: 20rem;
+    right: 10rem;
   }
   .fa-coffee {
     top: 35rem;
-    right: 10rem;
+    right: 5rem;
   }
   .fa-node-js {
     top: 40rem;
-    right: 20rem;
+    right: 10rem;
   }
   .fa-apple-alt {
     top: 45rem;
-    right: 10rem;
+    right: 5rem;
   }
   h1 {
     color: #fffcff;
@@ -100,13 +100,15 @@
     }
   }
   .container {
-    width: 41vw;
-    text-align: center;
+    width: 49vw;
+    text-align: left;
     margin-top: 20px;
     padding: 15px;
-    background-color: rgb(255, 255, 255);
-    color: $textColor;
-    box-shadow: rgba(84, 34, 14, 0.338) 0px 22px 70px 4px;
+    overflow: hidden;
+    // background-color: rgb(255, 255, 255);
+    color: #fffcff;
+    font-weight: 400;
+    // box-shadow: rgba(84, 34, 14, 0.338) 0px 22px 70px 4px;
     min-height: 40vh;
     border-radius: 10px;
     display: flex;
@@ -122,7 +124,9 @@
     }
     p {
       line-height: 2.2;
+      text-align: justify;
       padding: 30px;
+      letter-spacing: 0.5px;
       @include mobile {
         line-height: 1.5;
         padding-top: 50px;

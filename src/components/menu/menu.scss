@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .menu {
-  width: 23vw;
+  width: 20vw;
   height: 100vh;
   background-color: $mainColor;
   position: fixed;
@@ -34,7 +34,7 @@
       a {
         // font-size: inherit;
         color: #fffcff;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 300;
         text-decoration: none;
         @include mobile {
