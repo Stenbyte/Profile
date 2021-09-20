@@ -25,14 +25,17 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           >
             <i
               className="fab fa-linkedin-in"
-              style={{ paddingRight: "10px" }}
+              style={{ fontSize: "25px", padding: "0 10px" }}
             ></i>
             <a
               href="https://github.com/Stenbyte"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fab fa-github"></i>
+              <i
+                className="fab fa-github"
+                style={{ fontSize: "25px", padding: "0 10px" }}
+              ></i>
             </a>
           </a>
         </li>
