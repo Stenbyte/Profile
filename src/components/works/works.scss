@@ -14,7 +14,7 @@
     color: #fffcff;
     @include mobile {
       font-size: 20px;
-      top: 15px;
+      top: 35px;
     }
   }
   .arrow {
@@ -43,7 +43,7 @@
     transition: all 1s ease-in-out;
     @include mobile {
       padding-top: 100px;
-      height: 90vh;
+      height: 70vh;
       flex-direction: column;
       justify-content: center;
     }

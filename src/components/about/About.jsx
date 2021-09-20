@@ -11,8 +11,7 @@ export default function About() {
       <i className="fas fa-code"></i>
       <i className="fab fa-codepen"></i>
       <i className="far fa-folder-open"></i>
-      <i className="fas fa-user-secret"></i>
-      <i className="fas fa-terminal"></i>
+
       <div className="container">
         <p>
           Hi there, I'm young 34 years old aspiring Frontend developer. I came
@@ -39,8 +38,6 @@ export default function About() {
       <i className="fas fa-compact-disc"></i>
       <i className="fab fa-node"></i>
       <i className="fas fa-coffee"></i>
-      <i className="fab fa-node-js"></i>
-      <i className="fas fa-apple-alt"></i>
     </div>
   );
 }

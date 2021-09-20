@@ -5,6 +5,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+
   i {
     opacity: 0.4;
     color: #fffcff;
@@ -42,14 +43,7 @@
     top: 35rem;
     left: 5rem;
   }
-  .fa-user-secret {
-    top: 40rem;
-    left: 10rem;
-  }
-  .fa-terminal {
-    top: 45rem;
-    left: 5rem;
-  }
+
   // first
   .fa-plug {
     top: 5rem;
@@ -79,19 +73,14 @@
     top: 35rem;
     right: 5rem;
   }
-  .fa-node-js {
-    top: 40rem;
-    right: 10rem;
-  }
-  .fa-apple-alt {
-    top: 45rem;
-    right: 5rem;
-  }
+
   h1 {
     color: #fffcff;
     margin-bottom: 40px;
     font-size: 50px;
     font-weight: 300;
+    // position: absolute;
+    // top: 20px;
     @include mobile {
       font-size: 20px;
       margin-bottom: 20px;
@@ -104,15 +93,17 @@
     text-align: left;
     margin-top: 20px;
     padding: 15px;
-    overflow: hidden;
+
     // background-color: rgb(255, 255, 255);
     color: #fffcff;
     font-weight: 400;
     // box-shadow: rgba(84, 34, 14, 0.338) 0px 22px 70px 4px;
-    min-height: 40vh;
+    // min-height: 40vh;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    // position: absolute;
+    // top: 100px;
     justify-content: center;
     @include mobile {
       width: 100%;
@@ -125,13 +116,17 @@
     p {
       line-height: 2.2;
       text-align: justify;
-      padding: 30px;
+      // padding: 30px;
+      overflow: auto;
       letter-spacing: 0.5px;
+      // min-height: 40vh;
+
       @include mobile {
         line-height: 1.5;
-        padding-top: 50px;
+        // padding-top: 10px;
         margin: 5px;
-        height: 100%;
+        padding: 10px;
+        // height: 100%;
       }
     }
   }

@@ -1,6 +1,5 @@
 import Bored from "./img/bored.png";
 import Pig from "./img/pig.png";
-import Mapty from "./img/Mapty.png";
 import Guess from "./img/guess.png";
 import Forkify from "./img/forkify.png";
 import LinkedIn from "./img/linkedIn.png";
