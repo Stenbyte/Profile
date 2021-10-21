@@ -8,6 +8,7 @@
     position: relative;
     top: 70px;
     scroll-behavior: smooth;
+    flex-direction: column;
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
     &::-webkit-scrollbar {
@@ -17,6 +18,36 @@
       width: 100%;
       height: calc(100vh - 70px);
       scroll-snap-align: start;
+    }
+    .me {
+      position: absolute;
+      // background-color: $textColor;
+      scroll-snap-type: none;
+      top: 89.5vh;
+      left: 39.5vw;
+      width: 18vw;
+      height: 6vh;
+      padding: 0.8rem;
+      display: flex;
+
+      z-index: 10;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      h1 {
+        color: $mainColor;
+        // margin-bottom: 40px;
+        font-size: 46px;
+        font-weight: 300;
+        // position: absolute;
+        // top: 20px;
+        @include mobile {
+          font-size: 20px;
+          margin-bottom: 20px;
+          padding: 10px;
+          height: 50px;
+        }
+      }
     }
   }
 }

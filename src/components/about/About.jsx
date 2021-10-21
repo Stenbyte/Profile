@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./about.scss";
 export default function About() {
-  return (
-    <div className="about" id="about">
-      <h1>ABOUT ME</h1>
-      <i className="fas fa-mouse"></i>
-      <i className="fas fa-robot"></i>
-      <i className="fas fa-ethernet"></i>
-      <i className="fas fa-keyboard"></i>
-      <i className="fas fa-code"></i>
-      <i className="fab fa-codepen"></i>
-      <i className="far fa-folder-open"></i>
+  // const [offsetY, setOffsetY] = useState(0);
+  // const handleScroll = () => setOffsetY(window.pageYOffset);
 
+  const scrollHandle = (e) => {
+    let target = document.querySelector(".parallax");
+    let scrolled = e.target.scrollTop;
+    let rate = scrolled * 0.2;
+    target.style.transform = `translate3d(0px,${rate}px,0px)`;
+    let target2 = document.querySelector(".container");
+    target2.style.transform = `translate3d(0px,${-rate}px,0px)`;
+  };
+
+  return (
+    <div className="about" id="about" onScroll={scrollHandle}>
+      <div className="parallax"></div>
       <div className="container">
         <p>
           Hi there, I'm young 34 years old aspiring Frontend developer. I came
@@ -31,13 +35,6 @@ export default function About() {
           Please take a look at my projects below.
         </p>
       </div>
-      <i className="fas fa-plug"></i>
-      <i className="fas fa-save"></i>
-      <i className="fas fa-headphones"></i>
-      <i className="fas fa-satellite"></i>
-      <i className="fas fa-compact-disc"></i>
-      <i className="fab fa-node"></i>
-      <i className="fas fa-coffee"></i>
     </div>
   );
 }

@@ -9,12 +9,16 @@ import { useState } from "react";
 import About from "./components/about/About";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
+        <div className="me">
+          <h1>ABOUT ME</h1>
+        </div>
         <About />
         <Portfolio />
         <Works />

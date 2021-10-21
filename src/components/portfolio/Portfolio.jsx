@@ -10,28 +10,21 @@ export default function Portfolio() {
 
   const list = [
     {
-      id: "React_JS",
-      title: "React",
+      id: "projects",
+      title: "Projects",
     },
     {
-      id: "Js",
-      title: "Javascript",
-    },
-    {
-      id: "games",
-      title: "Games",
+      id: "cert",
+      title: "Certificates",
     },
   ];
   useEffect(() => {
     switch (selected) {
-      case "React_JS":
+      case "projects":
         setData(ReactPortfolio);
         break;
-      case "Js":
+      case "cert":
         setData(JSPortfolio);
-        break;
-      case "games":
-        setData(gamesPortfolio);
         break;
       default:
         setData([]);
@@ -40,7 +33,7 @@ export default function Portfolio() {
   }, [selected]);
   return (
     <div className="portfolio" id="portfolio">
-      <h1>PORTFOLIO</h1>
+      <h1>ACHIEVMENTS</h1>
       <ul>
         {list.map((i) => (
           <PortfolioList

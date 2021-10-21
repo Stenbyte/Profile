@@ -5,106 +5,42 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-
-  i {
-    opacity: 0.4;
-    color: #fffcff;
-    font-size: 1rem;
+  scroll-behavior: smooth;
+  background: url("https://source.unsplash.com/WLUHO9A_xik/2000x900") no-repeat;
+  background-color: $bckMain;
+  background-blend-mode: multiply;
+  .parallax {
+    width: 60vw;
+    height: 65vh;
     position: absolute;
-    @include mobile {
-      display: none;
-    }
-  }
-  .fa-mouse {
-    top: 5rem;
-    left: 5rem;
-  }
-  .fa-robot {
-    top: 10rem;
-    left: 10rem;
-  }
-  .fa-ethernet {
-    top: 15rem;
-    left: 5rem;
-  }
-  .fa-keyboard {
     top: 20rem;
-    left: 10rem;
-  }
-  .fa-code {
-    top: 25rem;
-    left: 5rem;
-  }
-  .fa-codepen {
-    top: 30rem;
-    left: 10rem;
-  }
-  .fa-folder-open {
-    top: 35rem;
-    left: 5rem;
-  }
-
-  // first
-  .fa-plug {
-    top: 5rem;
-    right: 5rem;
-  }
-  .fa-save {
-    top: 10rem;
-    right: 10rem;
-  }
-  .fa-headphones {
-    top: 15rem;
-    right: 5rem;
-  }
-  .fa-satellite {
-    top: 20rem;
-    right: 10rem;
-  }
-  .fa-compact-disc {
-    top: 25rem;
-    right: 5rem;
-  }
-  .fa-node {
-    top: 30rem;
-    right: 10rem;
-  }
-  .fa-coffee {
-    top: 35rem;
-    right: 5rem;
-  }
-
-  h1 {
-    color: #fffcff;
-    margin-bottom: 40px;
-    font-size: 50px;
-    font-weight: 300;
-    // position: absolute;
-    // top: 20px;
-    @include mobile {
-      font-size: 20px;
-      margin-bottom: 20px;
-      padding: 10px;
-      height: 50px;
-    }
+    border-radius: 2px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    // background-color: $txtColor;
   }
   .container {
     width: 49vw;
+    height: 70vh;
     text-align: left;
     margin-top: 20px;
     padding: 15px;
-
-    // background-color: rgb(255, 255, 255);
+    overflow: scroll;
     color: #fffcff;
+    // color: $textColor;
     font-weight: 400;
-    // box-shadow: rgba(84, 34, 14, 0.338) 0px 22px 70px 4px;
-    // min-height: 40vh;
+
     border-radius: 10px;
     display: flex;
     align-items: center;
-    // position: absolute;
-    // top: 100px;
+    position: absolute;
+    top: 400px;
     justify-content: center;
+    h4 {
+      color: red;
+      left: 10rem;
+      position: absolute;
+    }
     @include mobile {
       width: 100%;
       overflow: scroll;
