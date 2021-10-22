@@ -4,19 +4,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: space-evenly;
 
   h1 {
     font-size: 50px;
     font-weight: 300;
-    margin-bottom: 40px;
-    color: $textColor;
+    margin-bottom: 8rem;
+    color: $mainColor;
     @include mobile {
       font-size: 20px;
     }
   }
   ul {
-    margin: 10px;
+    margin-bottom: 2rem;
     padding: 0;
     list-style: none;
     display: flex;
@@ -42,7 +42,7 @@
       width: 220px;
       height: 150px;
       border-radius: 20px;
-      border: 1px solid lightblue;
+      border: 1px solid #01497c58;
       margin: 10px 20px;
       display: flex;
       align-items: center;
@@ -58,7 +58,8 @@
       }
       h3 {
         position: absolute;
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 300;
       }
       img {
         width: 100%;
@@ -67,7 +68,7 @@
         z-index: 1;
       }
       &:hover {
-        background-color: $mainColor;
+        background-color: $bckMain;
         img {
           opacity: 0.2;
           z-index: 0;

@@ -9,19 +9,23 @@ import { useState } from "react";
 import About from "./components/about/About";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [num, setNum] = useState(0);
+  const scrollHandle = (e) => {
+    setNum(e.target.scrollTop);
+    // console.log(num);
+  };
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
+      <div className="sections" onScroll={scrollHandle}>
         <Intro />
         <div className="me">
           <h1>ABOUT ME</h1>
         </div>
-        <About />
+        <About num={num} />
         <Portfolio />
-        <Works />
+        <Works num={num} />
       </div>
     </div>
   );

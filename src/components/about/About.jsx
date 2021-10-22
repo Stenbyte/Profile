@@ -1,22 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./about.scss";
-export default function About() {
-  // const [offsetY, setOffsetY] = useState(0);
-  // const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  const scrollHandle = (e) => {
-    let target = document.querySelector(".parallax");
-    let scrolled = e.target.scrollTop;
-    let rate = scrolled * 0.2;
-    target.style.transform = `translate3d(0px,${rate}px,0px)`;
-    let target2 = document.querySelector(".container");
-    target2.style.transform = `translate3d(0px,${-rate}px,0px)`;
+export default function About({ num }) {
+  // const scrollHandle = (e) => {
+  //   let target = document.querySelector(".parallax");
+  //   let scrolled = e.target.scrollTop;
+  //   let rate = scrolled * 0.2;
+  //   target.style.transform = `translate3d(0px,${rate}px,0px)`;
+  //   let target2 = document.querySelector(".container");
+  //   target2.style.transform = `translate3d(0px,${-rate}px,0px)`;
+  // };
+  const style = {
+    transform: `translateY(${num >= 220 ? 1 : 10}rem)`,
+  };
+  const style1 = {
+    transform: `translateY(${num >= 220 ? 1 : -3}rem)`,
   };
 
   return (
-    <div className="about" id="about" onScroll={scrollHandle}>
-      <div className="parallax"></div>
-      <div className="container">
+    <div className="about" id="about">
+      <div className="parallax" style={style}></div>
+      <div className="container" style={style1}>
         <p>
           Hi there, I'm young 34 years old aspiring Frontend developer. I came
           into this industry because of my big interest and passion for it. And

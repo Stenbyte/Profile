@@ -5,7 +5,7 @@ li {
   margin-right: 50px;
   padding: 7px;
   border-radius: 10px;
-  color: $textColor;
+  color: $mainColor;
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
@@ -17,7 +17,7 @@ li {
   }
 
   &.active {
-    background: $mainColor;
+    background: $textColor;
     color: #fffcff;
   }
 }

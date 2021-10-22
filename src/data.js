@@ -1,43 +1,43 @@
-import Bored from "./img/bored.png";
-import Pig from "./img/pig.png";
-import Guess from "./img/guess.png";
-import Forkify from "./img/forkify.png";
 import LinkedIn from "./img/linkedIn.png";
+import github from "./img/github.png";
+import St from "./img/St.png";
+import St1 from "./img/St1.png";
+import St2 from "./img/St2.png";
+import Git from "./img/Git.jpeg";
 
-export const ReactPortfolio = [
+export const Projects = [
   {
     id: 1,
     title: "LinkedIn Clone",
     img: LinkedIn,
     url: "https://linkedin-clone-1ef65.web.app/",
   },
-];
-export const JSPortfolio = [
   {
-    id: 1,
-    title: "Media App",
-    img: Bored,
-    url: "https://stenbyte.github.io/are_you_bored",
-  },
-  {
-    id: 3,
-    title: "Forkify",
-    img: Forkify,
-    url: "https://forkify-sten.netlify.app/",
+    id: 2,
+    title: "Clone Github",
+    img: github,
+    url: "https://github.com/Stenbyte/LinkedIn_Clone",
   },
 ];
-
-export const gamesPortfolio = [
+export const Certificates = [
   {
     id: 1,
-    title: "Pig Game",
-    img: Pig,
-    url: "https://stenbyte.github.io/PigGame",
+    title: "React",
+    img: St,
   },
   {
     id: 2,
-    title: "Guess My Number",
-    img: Guess,
-    url: "https://guess-sten.netlify.app/",
+    title: "Javascript",
+    img: St1,
+  },
+  {
+    id: 3,
+    title: "Git",
+    img: Git,
+  },
+  {
+    id: 4,
+    title: "Web",
+    img: St2,
   },
 ];

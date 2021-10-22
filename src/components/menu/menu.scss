@@ -27,14 +27,13 @@
     margin-top: 0;
     padding: 0;
     list-style: none;
-    color: #fffcff;
-    width: 60%;
+    width: 80%;
+    margin-left: 2rem;
     li {
       margin-bottom: 40px;
       height: 30px;
       a {
-        // font-size: inherit;
-        color: #fffcff;
+        color: $txtColor;
         font-size: 20px;
         font-weight: 300;
         text-decoration: none;
