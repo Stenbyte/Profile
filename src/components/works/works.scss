@@ -5,54 +5,188 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  transition: all 2s ease-out;
-
-  h1 {
+  // flex-direction: column;
+  // transition: all 2s ease-out;
+  @include mobile {
+    height: 100vh;
+  }
+  .h1 {
     position: absolute;
     top: 0;
     font-weight: 300;
     font-size: 50px;
-    color: $textColor;
+    color: $mainColor;
     @include mobile {
       font-size: 20px;
-      top: 35px;
+      top: 0;
     }
   }
-
-  .p1 {
+  p {
+    font-size: 20px;
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+  .p1,
+  .p2,
+  .p3,
+  .p4,
+  .p5,
+  .p6,
+  .p7,
+  .p8,
+  .p9,
+  .p10,
+  .p11,
+  .p12,
+  .p13,
+  .p14,
+  .p15,
+  .p16,
+  .p17,
+  .p18,
+  .p19 {
     position: absolute;
-    top: 1.5rem;
-    left: 3rem;
+  }
+  .p1 {
+    top: 10vh;
+    left: 20vw;
+    font-weight: 300;
     transition: all 6s ease-in 1s;
   }
   .p2 {
-    position: absolute;
-    top: 3rem;
-    left: 10rem;
+    top: 18vh;
+    left: 32.4vw;
+    font-weight: 400;
     transition: all 6s ease 2s;
   }
   .p3 {
-    position: absolute;
-    top: 6rem;
-    left: 15.1rem;
+    top: 27vh;
+    left: 13vw;
+    font-weight: 300;
     transition: all 6s ease-out 3s;
+    // @include mobile {
+    //   left: 7rem;
+    // }
   }
   .p4 {
-    position: absolute;
-    top: 7rem;
-    left: 5rem;
+    top: 14vh;
+    left: 7vw;
+    font-weight: 400;
     transition: all 6s ease-out 4s;
   }
   .p5 {
-    position: absolute;
-    top: 11rem;
-    left: 9rem;
+    top: 31vh;
+    left: 25vw;
+    font-weight: 300;
     transition: all 6s ease-out 4s;
   }
   .p6 {
-    position: absolute;
-    top: 14rem;
-    left: 3rem;
+    top: 47vh;
+    left: 9vw;
+    font-weight: 400;
     transition: all 6s ease-out 5s;
+  }
+
+  .p7 {
+    top: 55vh;
+    left: 25vw;
+    font-weight: 300;
+    transition: all 6s ease-out 3s;
+  }
+  .p8 {
+    top: 47vh;
+    left: 31vw;
+    font-weight: 400;
+    transition: all 6s ease-out 3s;
+    @include mobile {
+      left: 31vw;
+    }
+    @include middle {
+      left: 20vw;
+      top: 40vh;
+    }
+  }
+  .p9 {
+    top: 70vh;
+    left: 10vw;
+    font-weight: 300;
+    transition: all 6s ease-out 2s;
+  }
+  .p10 {
+    top: 74vh;
+    left: 30vw;
+    font-weight: 400;
+    transition: all 6s ease-out 2s;
+  }
+  .p11 {
+    top: 11vh;
+    right: 10vw;
+    font-weight: 300;
+    transition: all 6s ease-out 1s;
+    @include mobile {
+      top: 11vh;
+    }
+  }
+  .p12 {
+    top: 15vh;
+    right: 30vw;
+    font-weight: 400;
+    transition: all 6s ease-out 1s;
+  }
+  .p13 {
+    top: 31vh;
+    right: 33vw;
+    font-weight: 300;
+    transition: all 6s ease-out 4s;
+  }
+  .p16 {
+    top: 37vh;
+    right: 14vw;
+    font-weight: 300;
+    transition: all 6s ease-out 1.5s;
+  }
+  .p17 {
+    top: 70vh;
+    right: 35vw;
+    // margin: 30rem 1rem 1rem 0;
+    font-weight: 400;
+    transition: all 6s ease-out 1.9s;
+  }
+  .p18 {
+    top: 67vh;
+    right: 11vw;
+    font-weight: 300;
+    transition: all 6s ease-out 2.3s;
+  }
+  .p19 {
+    top: 55vh;
+    right: 27vw;
+    font-weight: 400;
+    transition: all 6s ease-out 2.7s;
+  }
+  .rot {
+    position: absolute;
+
+    margin: 0 2.4rem 3.3rem 0;
+    width: 7rem;
+    transition: all 5s ease-in-out;
+    @include mobile {
+      width: 4rem;
+      margin: -1.8rem 0 0 -1.4rem;
+    }
+    @include middle {
+      width: 3rem;
+      margin: -1.3rem 0 0 -1rem;
+    }
+  }
+  .first {
+    width: 18rem;
+    @include mobile {
+      width: 11rem;
+    }
+    @include middle {
+      width: 7rem;
+    }
   }
 }

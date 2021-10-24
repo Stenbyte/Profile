@@ -3,7 +3,7 @@ import github from "./img/github.png";
 import St from "./img/St.png";
 import St1 from "./img/St1.png";
 import St2 from "./img/St2.png";
-import Git from "./img/Git.jpeg";
+import Git from "./img/Git.png";
 
 export const Projects = [
   {
@@ -14,7 +14,7 @@ export const Projects = [
   },
   {
     id: 2,
-    title: "Clone Github",
+    title: "LINKEDIN REPO",
     img: github,
     url: "https://github.com/Stenbyte/LinkedIn_Clone",
   },

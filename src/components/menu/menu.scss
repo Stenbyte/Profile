@@ -14,7 +14,11 @@
   justify-content: center;
   transition: all 1s ease-in-out;
   @include mobile {
-    width: 60vw;
+    width: 25vw;
+    right: -60vw;
+  }
+  @include middle {
+    width: 45vw;
     right: -60vw;
   }
   &.active {

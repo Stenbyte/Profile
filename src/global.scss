@@ -11,3 +11,8 @@ $width: 768px;
     @content;
   }
 }
+@mixin middle {
+  @media (max-width: 425px) {
+    @content;
+  }
+}

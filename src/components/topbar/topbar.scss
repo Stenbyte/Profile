@@ -37,28 +37,6 @@
         @include mobile {
           display: none;
         }
-        a:link {
-          color: $txtColor;
-        }
-        a:active {
-          color: $txtColor;
-        }
-        a:visited {
-          color: $txtColor;
-        }
-
-        i {
-          font-size: 18px;
-          margin-right: 5px;
-        }
-        .icon {
-          font-size: 18px;
-          margin-right: 5px;
-        }
-        span {
-          font-size: 15px;
-          font-weight: 300;
-        }
       }
     }
     .right {

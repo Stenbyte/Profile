@@ -1,0 +1,119 @@
+@import "../../global.scss";
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  @include mobile {
+    // flex-direction: column;
+  }
+  h1 {
+    // position: absolute;
+    top: 0;
+    color: #fffcff;
+    font-weight: 300;
+    font-size: 50px;
+    // @include middle {
+    //   font-size: 1.3rem;
+    // }
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+  .common {
+    display: flex;
+    gap: 3rem;
+    @include mobile {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  .c,
+  .c1 {
+    width: 40vw;
+    height: 30vh;
+    border-radius: 1px;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: white;
+    @include mobile {
+      width: 90vw;
+      height: 10rem;
+    }
+  }
+  .c {
+    // padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 2rem;
+    @include mobile {
+      padding: 0 1rem;
+    }
+
+    h3 {
+      line-height: 2;
+      font-weight: 400;
+      width: 80vw;
+      color: $mainColor;
+      @include mobile {
+        font-size: 1.5rem;
+      }
+      @include middle {
+        font-size: 0.8rem;
+      }
+      a:link {
+        color: $mainColor;
+      }
+      a:active {
+        color: $mainColor;
+      }
+      a:visited {
+        color: $mainColor;
+      }
+      a {
+        i {
+          font-size: 20px;
+          margin-right: 1rem;
+          margin-bottom: -0.2rem;
+        }
+      }
+    }
+  }
+  .c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+    h3 {
+      color: $mainColor;
+      @include mobile {
+        font-size: 1.3rem;
+      }
+    }
+    img {
+      width: 30vw;
+      margin: 0 auto;
+      @include mobile {
+        width: 60vw;
+        height: 7vh;
+      }
+      @include middle {
+        width: 70vw;
+      }
+    }
+  }
+  .footer {
+    color: #fffcff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    span {
+      color: $yellow;
+    }
+  }
+}

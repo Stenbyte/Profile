@@ -7,6 +7,7 @@ import "./app.scss";
 import Menu from "./components/menu/Menu";
 import { useState } from "react";
 import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [num, setNum] = useState(0);
@@ -20,12 +21,10 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections" onScroll={scrollHandle}>
         <Intro />
-        <div className="me">
-          <h1>ABOUT ME</h1>
-        </div>
         <About num={num} />
         <Portfolio />
         <Works num={num} />
+        <Contact />
       </div>
     </div>
   );

@@ -1,14 +1,6 @@
 import React from "react";
 import "./about.scss";
 export default function About({ num }) {
-  // const scrollHandle = (e) => {
-  //   let target = document.querySelector(".parallax");
-  //   let scrolled = e.target.scrollTop;
-  //   let rate = scrolled * 0.2;
-  //   target.style.transform = `translate3d(0px,${rate}px,0px)`;
-  //   let target2 = document.querySelector(".container");
-  //   target2.style.transform = `translate3d(0px,${-rate}px,0px)`;
-  // };
   const style = {
     transform: `translateY(${num >= 220 ? 1 : 10}rem)`,
   };
@@ -18,6 +10,7 @@ export default function About({ num }) {
 
   return (
     <div className="about" id="about">
+      <h1 className="me">ABOUT ME</h1>
       <div className="parallax" style={style}></div>
       <div className="container" style={style1}>
         <p>

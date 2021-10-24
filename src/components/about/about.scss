@@ -6,63 +6,85 @@
   flex-direction: column;
   position: relative;
   scroll-behavior: smooth;
-  background: url("https://source.unsplash.com/WLUHO9A_xik/2000x900") no-repeat;
+  background: url("https://source.unsplash.com/WLUHO9A_xik/2000x1000") center
+    center no-repeat;
+  overflow: hidden;
   background-color: $bckMain;
   background-blend-mode: multiply;
+  .me {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    font-weight: 300;
+    font-size: 50px;
+    color: $mainColor;
+    @include mobile {
+      font-size: 20px;
+      top: 0;
+    }
+  }
   .parallax {
     width: 60vw;
     height: 65vh;
     position: absolute;
-    // top: 20rem;
     border-radius: 2px;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.2);
     transition: all 1s ease-out;
+    @include mobile {
+      width: 80vw;
+    }
+    @include middle {
+      width: 90vw;
+      // height: 80%;
+      overflow: hidden;
+    }
   }
   .container {
     width: 49vw;
-    // height: 50vh;
     text-align: left;
     margin-top: 20px;
     padding: 15px;
     overflow: scroll;
     color: #fffcff;
-    // color: $textColor;
+
     font-weight: 400;
     transition: all 1s ease-out;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    // position: absolute;
-    // top: 400px;
     justify-content: center;
-    h4 {
-      color: red;
-      left: 10rem;
-      position: absolute;
-    }
     @include mobile {
-      width: 100%;
-      overflow: scroll;
-      min-height: 100px;
+      width: 70vw;
+      // overflow: scroll;
+      max-height: 60vh;
       margin: 0;
       padding: 0;
       border-radius: 0;
     }
+    @include middle {
+      width: 90vw;
+      // height: 100vh;
+      padding: 1rem;
+      overflow: hidden;
+    }
     p {
       line-height: 2.2;
       text-align: justify;
-      // padding: 30px;
+
       overflow: auto;
       letter-spacing: 0.5px;
-      // min-height: 40vh;
 
       @include mobile {
-        line-height: 1.5;
-        // padding-top: 10px;
+        line-height: 1.6;
         margin: 5px;
+        font-size: 14px;
         padding: 10px;
-        // height: 100%;
+      }
+      @include middle {
+        line-height: 1.1;
+        font-size: 13px;
+        // padding: 0;
       }
     }
   }
