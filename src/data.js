@@ -21,7 +21,7 @@ export const JSPortfolio = [
   },
   {
     id: 3,
-    title: "Forkify",
+    title: "Forkif",
     img: Forkify,
     url: "https://forkify-sten.netlify.app/",
   },
