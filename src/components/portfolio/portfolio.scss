@@ -30,6 +30,9 @@
       height: 80px;
       justify-content: center;
     }
+    @include middle {
+      margin: 0;
+    }
   }
   .container {
     width: 70%;
