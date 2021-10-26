@@ -36,8 +36,9 @@ export default function About({ num }) {
           • These studies and internship has boosted my development skills
           significantly.
           <br />• Software Development - is my biggest passion, which I spare no
-          effort. I am organized, constantly learning, positive and open-minded
-          a person who can become a valuable part of your company.
+          effort. I am an organized, constantly learning, positive, and
+          open-minded person who is looking to become a valuable part of your
+          company.
         </p>
       </div>
     </div>

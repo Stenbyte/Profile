@@ -43,8 +43,10 @@ export default function Works({ num }) {
           BOOTSTRAP
         </p>
       </div>
-      <img src="assets/Vector.png" alt="" className="rot" style={style1} />
+
       <img src="assets/skill.png" alt="" className="first" />
+
+      <img src="assets/Vector.png" alt="" className="rot" style={style1} />
       <div className="sec1">
         <p className="p10" style={style}>
           STYLED COMPONENTS

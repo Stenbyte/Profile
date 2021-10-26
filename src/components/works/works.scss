@@ -173,14 +173,18 @@
     width: 7rem;
     transition: all 5s ease-in-out;
     @include mobile {
-      width: 4rem;
-      margin: -1.8rem 0 0 -1.4rem;
+      width: 4.5rem;
+      margin: -2rem 0 0 -1.5rem;
     }
     @include middle {
-      width: 3rem;
-      margin: -1.3rem 0 0 -1rem;
+      width: 13vw;
+
+      // margin: -1.3rem 0 0 -1rem;
+      top: 44.9vh;
+      left: 47.4vw;
     }
   }
+
   .first {
     width: 18rem;
     @include mobile {
