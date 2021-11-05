@@ -4,6 +4,7 @@ import St from "./img/St.png";
 import St1 from "./img/St1.png";
 import St2 from "./img/St2.png";
 import Git from "./img/Git.png";
+import reader from "./img/reader.png";
 
 export const Projects = [
   {
@@ -17,6 +18,12 @@ export const Projects = [
     title: "LINKEDIN REPO",
     img: github,
     url: "https://github.com/Stenbyte/LinkedIn_Clone",
+  },
+  {
+    id: 3,
+    title: "READER APP",
+    img: reader,
+    url: "https://reader-sten.netlify.app/",
   },
 ];
 export const Certificates = [
