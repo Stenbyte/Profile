@@ -5,6 +5,7 @@ import St1 from "./img/St1.png";
 import St2 from "./img/St2.png";
 import Git from "./img/Git.png";
 import reader from "./img/reader.png";
+import chat from "./img/chat.png";
 
 export const Projects = [
   {
@@ -15,15 +16,21 @@ export const Projects = [
   },
   {
     id: 2,
-    title: "LINKEDIN REPO",
-    img: github,
-    url: "https://github.com/Stenbyte/LinkedIn_Clone",
+    title: "READER-CHAT",
+    img: chat,
+    url: "https://readerchat-sten.netlify.app/",
   },
   {
     id: 3,
     title: "READER APP",
     img: reader,
     url: "https://reader-sten.netlify.app/",
+  },
+  {
+    id: 4,
+    title: "MY GITHUB",
+    img: github,
+    url: "https://github.com/Stenbyte",
   },
 ];
 export const Certificates = [

@@ -5,7 +5,7 @@ export default function Works({ num }) {
   console.log(num);
 
   const style = {
-    color: `${num >= 1400 ? "#a9d6e5" : "#013a63"}`,
+    color: `${num >= 1400 ? "#a9d6e5" : "#012a4a"}`,
   };
   const style1 = {
     transform: `rotate(${num >= 1400 ? "250" : "0"}deg)`,
