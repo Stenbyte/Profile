@@ -37,11 +37,11 @@ export default function Works({ num }) {
         </p>
 
         <p className="p8" style={style}>
-          SCSS
+          SASS
         </p>
-        <p className="p9" style={style}>
-          BOOTSTRAP
-        </p>
+        {/* <p className="p9" style={style}>
+          AJAX
+        </p> */}
       </div>
 
       <img src="assets/skill.png" alt="" className="first" />
@@ -55,7 +55,7 @@ export default function Works({ num }) {
           FIREBASE
         </p>
         <p className="p12" style={style}>
-          NODE
+          REST API
         </p>
         <p className="p13" style={style}>
           HTML
@@ -68,10 +68,10 @@ export default function Works({ num }) {
           REDUX
         </p>
         <p className="p18" style={style}>
-          POSTMAN
+          AJAX
         </p>
         <p className="p19" style={style}>
-          MONGODB
+          CI/CD
         </p>
       </div>
     </div>

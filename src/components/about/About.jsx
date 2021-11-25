@@ -26,18 +26,17 @@ export default function About({ num }) {
           • It is a full-time 17-months intensive program, which covers both
           Front and Backend
           <br />• A lot of projects, teamwork, coding, and learning 24/7
-          <br /> • I chose to stick with Frontend because of big interest
-          towards it.
+          <br /> • I chose to stick with Frontend.
           <br />
-          • Since June 2021, I'm a Frontend Developer intern at Siciliamia
-          startup.
+          • Enthusiastic and positive even in tough situations
           <br />
-          • These studies and internship has boosted my development skills
-          significantly.
+          • Since June 2021, Frontend Developer intern at Siciliamia startup.
+          <br />
+          • Good team player and continuous learner.
           <br />• Software Development - is my biggest passion, which I spare no
-          effort. I am an organized, constantly learning, positive, and
-          open-minded person who is looking to become a valuable part of your
-          company.
+          effort. I am a self-disciplined, organized, and open-minded person
+          with a desire to improve who is looking to become a valuable part of a
+          team.
         </p>
       </div>
     </div>

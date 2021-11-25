@@ -11,10 +11,10 @@ export default function Intro() {
           </h3>
         </div>
         <p>
-          “Let your unique awesomeness and positive energy inspire confidence in
-          others.”
+          “Success is not final; failure is not fatal: It is the courage to
+          continue that counts.”
         </p>
-        <span className="span">Anonymous</span>
+        <span className="span">-- Winston S. Churchill</span>
       </div>
       <div className="bottom">
         <img src="assets/st.png" alt="" />
