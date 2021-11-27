@@ -5,14 +5,30 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  // width: 100%;
   // flex-direction: column;
   // transition: all 2s ease-out;
   @include mobile {
     height: 100vh;
   }
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    .sec {
+      width: 20vw;
+      // background-color: #fffcff;
+    }
+    .sec1 {
+      width: 20vw;
+      // background-color: #fffcff;
+    }
+  }
   .h1 {
     position: absolute;
     top: 0;
+    // left: 40vw;
     font-weight: 300;
     font-size: 50px;
     color: #fffcff;
@@ -22,32 +38,34 @@
     }
   }
   p {
-    font-size: 20px;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    text-align: center;
     @include mobile {
       font-size: 1rem;
     }
   }
-  .p1,
-  .p2,
-  .p3,
-  .p4,
-  .p5,
-  .p6,
-  .p7,
-  .p8,
-  .p9,
-  .p10,
-  .p11,
-  .p12,
-  .p13,
-  .p14,
-  .p15,
-  .p16,
-  .p17,
-  .p18,
-  .p19 {
-    position: absolute;
-  }
+  // .p1,
+  // .p2,
+  // .p3,
+  // .p4,
+  // .p5,
+  // .p6,
+  // .p7,
+  // .p8,
+  // .p9,
+  // .p10,
+  // .p11,
+  // .p12,
+  // .p13,
+  // .p14,
+  // .p15,
+  // .p16,
+  // .p17,
+  // .p18,
+  // .p19 {
+  //   position: absolute;
+  // }
   .p1 {
     top: 10vh;
     left: 20vw;
@@ -165,33 +183,39 @@
     font-weight: 400;
     transition: all 6s ease-out 2.7s;
   }
-  .rot {
-    position: absolute;
-    // top: 31.4vh;
-    // left: 44.7vw;
-    margin: 0 2.4rem 3.3rem 0;
-    width: 7rem;
-    transition: all 5s ease-in-out;
-    @include mobile {
-      width: 4.5rem;
-      margin: -2rem 0 0 -1.5rem;
-    }
-    @include middle {
-      width: 13vw;
-
-      // margin: -1.3rem 0 0 -1rem;
-      top: 44.9vh;
-      left: 47.4vw;
-    }
-  }
-
-  .first {
-    width: 18rem;
-    @include mobile {
-      width: 11rem;
-    }
-    @include middle {
+  .cardimg {
+    position: relative;
+    // top: 10rem;
+    .rot {
+      position: absolute;
+      top: 10vh;
+      left: 4.7vw;
+      // top: 31.9vh;
+      // left: 44.7vw;
+      // margin: 0 2.4rem 3.3rem 0;
       width: 7rem;
+      transition: all 5s ease-in-out;
+      @include mobile {
+        width: 4.5rem;
+        margin: -2rem 0 0 -1.5rem;
+      }
+      @include middle {
+        width: 13vw;
+
+        // margin: -1.3rem 0 0 -1rem;
+        top: 44.9vh;
+        left: 47.4vw;
+      }
+    }
+
+    .first {
+      width: 20vw;
+      @include mobile {
+        width: 11rem;
+      }
+      @include middle {
+        width: 7rem;
+      }
     }
   }
 }
