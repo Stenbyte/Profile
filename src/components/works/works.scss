@@ -81,19 +81,19 @@
     top: 10vh;
     left: 20vw;
     font-weight: 300;
-    transition: all 6s ease-in 1s;
+    transition: all 3s ease-in 1s;
   }
   .p2 {
     top: 18vh;
     left: 32.4vw;
     font-weight: 400;
-    transition: all 6s ease 2s;
+    transition: all 3s ease 2s;
   }
   .p3 {
     top: 27vh;
     left: 13vw;
     font-weight: 300;
-    transition: all 6s ease-out 3s;
+    transition: all 4s ease-out 3.2s;
     // @include mobile {
     //   left: 7rem;
     // }
@@ -102,32 +102,32 @@
     top: 14vh;
     left: 7vw;
     font-weight: 400;
-    transition: all 6s ease-out 4s;
+    transition: all 3s ease-out 2.3s;
   }
   .p5 {
     top: 31vh;
     left: 25vw;
     font-weight: 300;
-    transition: all 6s ease-out 4s;
+    transition: all 3s ease-out 2s;
   }
   .p6 {
     top: 47vh;
     left: 9vw;
     font-weight: 400;
-    transition: all 6s ease-out 5s;
+    transition: all 3s ease-out 3s;
   }
 
   .p7 {
     top: 55vh;
     left: 25vw;
     font-weight: 300;
-    transition: all 6s ease-out 3s;
+    transition: all 4s ease-out 3s;
   }
   .p8 {
     top: 47vh;
     left: 31vw;
     font-weight: 400;
-    transition: all 6s ease-out 3s;
+    transition: all 4s ease-out 3s;
     @include mobile {
       left: 31vw;
     }
@@ -140,19 +140,19 @@
     top: 70vh;
     left: 10vw;
     font-weight: 300;
-    transition: all 6s ease-out 2s;
+    transition: all 4s ease-out 2s;
   }
   .p10 {
     top: 74vh;
     left: 30vw;
     font-weight: 400;
-    transition: all 6s ease-out 2s;
+    transition: all 4s ease-out 2s;
   }
   .p11 {
     top: 11vh;
     right: 10vw;
     font-weight: 300;
-    transition: all 6s ease-out 1s;
+    transition: all 4s ease-out 1s;
     @include mobile {
       top: 11vh;
     }
@@ -161,38 +161,38 @@
     top: 15vh;
     right: 30vw;
     font-weight: 400;
-    transition: all 6s ease-out 1s;
+    transition: all 3s ease-out 1s;
   }
   .p13 {
     top: 31vh;
     right: 33vw;
     font-weight: 300;
-    transition: all 6s ease-out 4s;
+    transition: all 3s ease-out 3s;
   }
   .p16 {
     top: 37vh;
     right: 14vw;
     font-weight: 300;
-    transition: all 6s ease-out 1.5s;
+    transition: all 4s ease-out 1.5s;
   }
   .p17 {
     top: 70vh;
     right: 35vw;
     // margin: 30rem 1rem 1rem 0;
     font-weight: 400;
-    transition: all 6s ease-out 1.9s;
+    transition: all 3s ease-out 1.9s;
   }
   .p18 {
     top: 67vh;
     right: 11vw;
     font-weight: 300;
-    transition: all 6s ease-out 2.3s;
+    transition: all 4s ease-out 2.3s;
   }
   .p19 {
     top: 55vh;
     right: 27vw;
     font-weight: 400;
-    transition: all 6s ease-out 2.7s;
+    transition: all 3s ease-out 2.7s;
   }
   .cardimg {
     position: relative;
