@@ -7,6 +7,11 @@ export default function Contact() {
       <h1>CONTACT ME</h1>
       <div className="common">
         <div className="c">
+          <h3>HIRE ME</h3>
+          <p>
+            I live in Helsinki and I have Finnish citizenship, therefore I can
+            be legally employed in Finland or other EU country.
+          </p>
           <h3>
             EMAIL : <span>sten.scheifel@gmail.com</span>
           </h3>

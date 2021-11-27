@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include mobile {
     // justify-content: space-evenly;
   }
@@ -15,7 +16,8 @@
     color: $mainColor;
     @include mobile {
       font-size: 20px;
-      margin-bottom: 4rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
   }
   ul {
@@ -35,55 +37,87 @@
     }
   }
   .container {
-    width: 70%;
+    width: 100%;
+    height: 60%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     @include mobile {
+      // width: 200vw;
       width: 100%;
-      margin-top: -2rem;
+      // margin-top: -2rem;
+      // flex-wrap: nowrap;
+      overflow: auto;
+      display: flex;
     }
-
     .item {
-      width: 220px;
-      height: 150px;
+      width: 20vw;
+      // min-height: 50vh;
+      max-height: 60vh;
       border-radius: 20px;
       border: 1px solid #01497c58;
       margin: 10px 20px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      color: white;
+      justify-content: space-between;
+      flex-direction: column;
+      color: $mainColor;
       position: relative;
       transition: all 0.5s ease-in;
-      cursor: pointer;
-      @include mobile {
-        width: 35vw;
-        height: 23vh;
-        margin: 10px;
-      }
-      h3 {
-        position: absolute;
-        font-size: 18px;
-        font-weight: 300;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-        @include mobile {
-          width: 100%;
-          height: 100%;
-        }
-      }
-      &:hover {
-        background-color: $bckMain;
+
+      a {
         img {
-          opacity: 0.2;
-          z-index: 0;
+          width: 20vw;
+          height: 20vh;
+          object-fit: cover;
+          z-index: 1;
+          cursor: pointer;
+          // &:hover {
+          //   background-color: $bckMain;
+          //   img {
+          //     opacity: 0.2;
+          //     z-index: 0;
+          //   }
+          // }
+          @include mobile {
+            width: 100vw;
+            height: 20vh;
+            object-fit: cover;
+            // overflow: hidden;
+          }
         }
+      }
+      .wrapper {
+        text-align: left;
+        width: 100%;
+        min-height: 10vh;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        line-height: 1.7;
+        h3 {
+          // position: absolute;
+          font-size: 18px;
+          font-weight: 300;
+          margin-bottom: 0.5rem;
+        }
+        span,
+        p {
+          font-weight: 300;
+        }
+        a {
+          font-weight: 300;
+          padding-right: 0.5rem;
+          color: $mainColor;
+        }
+      }
+      @include mobile {
+        width: 70vw;
+        height: 50vh;
+        margin: 10px;
+        // overflow: auto;
       }
     }
   }

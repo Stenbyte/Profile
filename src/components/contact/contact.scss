@@ -8,6 +8,7 @@
   position: relative;
   @include mobile {
     // flex-direction: column;
+    justify-content: flex-start;
   }
   h1 {
     // position: absolute;
@@ -20,6 +21,7 @@
     // }
     @include mobile {
       font-size: 20px;
+      margin-top: 1rem;
     }
   }
   .common {
@@ -27,20 +29,22 @@
     gap: 3rem;
     @include mobile {
       flex-direction: column;
+      justify-content: space-evenly;
+      height: 55vh;
       gap: 1.5rem;
     }
   }
   .c,
   .c1 {
     width: 40vw;
-    height: 30vh;
+    min-height: 30vh;
     border-radius: 1px;
     box-sizing: border-box;
     padding: 1rem;
     background-color: white;
     @include mobile {
       width: 90vw;
-      height: 10rem;
+      min-height: 20vh;
     }
   }
   .c {
@@ -53,7 +57,11 @@
     @include mobile {
       padding: 0 1rem;
     }
-
+    p {
+      line-height: 1.5;
+      color: $mainColor;
+      font-weight: 300;
+    }
     h3 {
       line-height: 2;
       font-weight: 400;

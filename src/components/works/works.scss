@@ -10,6 +10,7 @@
   // transition: all 2s ease-out;
   @include mobile {
     height: 100vh;
+    align-items: center;
   }
   .card {
     display: flex;
@@ -19,10 +20,19 @@
     .sec {
       width: 20vw;
       // background-color: #fffcff;
+      @include mobile {
+        width: 40vw;
+      }
     }
     .sec1 {
       width: 20vw;
       // background-color: #fffcff;
+      @include mobile {
+        width: 40vw;
+      }
+    }
+    @include mobile {
+      align-items: flex-start;
     }
   }
   .h1 {
@@ -34,7 +44,7 @@
     color: #fffcff;
     @include mobile {
       font-size: 20px;
-      top: 0;
+      top: 1rem;
     }
   }
   p {
@@ -43,6 +53,7 @@
     text-align: center;
     @include mobile {
       font-size: 1rem;
+      line-height: 3;
     }
   }
   // .p1,
@@ -212,9 +223,11 @@
       width: 20vw;
       @include mobile {
         width: 11rem;
+        display: none;
       }
       @include middle {
         width: 7rem;
+        display: none;
       }
     }
   }

@@ -1,5 +1,5 @@
 import LinkedIn from "./img/linkedIn.png";
-import github from "./img/github.png";
+// import github from "./img/github.png";
 import St from "./img/St.png";
 import St1 from "./img/St1.png";
 import St2 from "./img/St2.png";
@@ -13,24 +13,29 @@ export const Projects = [
     title: "LinkedIn Clone",
     img: LinkedIn,
     url: "https://linkedin-clone-1ef65.web.app/",
+    tech: ["React, Styled Components, Firebase, Redux, Router"],
+    mob: "No",
+    git: "https://github.com/Stenbyte/LinkedIn_Clone",
   },
   {
     id: 2,
     title: "READER-CHAT",
     img: chat,
     url: "https://readerchat-sten.netlify.app/",
+    tech: ["React, Firebase, Redux, Router, ContextAPI"],
+    mob: "No",
+    git: "https://github.com/Stenbyte/ReaderChat",
   },
   {
     id: 3,
     title: "READER APP",
     img: reader,
     url: "https://reader-sten.netlify.app/",
-  },
-  {
-    id: 4,
-    title: "MY GITHUB",
-    img: github,
-    url: "https://github.com/Stenbyte",
+    tech: [
+      "React, Firebase, Redux, Router, Google API, Merriam-Webster API, New York Times API",
+    ],
+    mob: "No",
+    git: "https://github.com/Stenbyte/Reader",
   },
 ];
 export const Certificates = [

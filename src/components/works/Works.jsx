@@ -7,9 +7,9 @@ export default function Works({ num }) {
   const style = {
     color: `${num >= 1400 ? "#a9d6e5" : "#012a4a"}`,
   };
-  const style1 = {
-    transform: `rotate(${num >= 1400 ? "250" : "0"}deg)`,
-  };
+  // const style1 = {
+  //   transform: `rotate(${num >= 1400 ? "250" : "0"}deg)`,
+  // };
   return (
     <div className="works" id="works">
       <h1 className="h1">SKILLS</h1>
