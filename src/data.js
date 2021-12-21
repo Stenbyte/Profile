@@ -6,28 +6,20 @@ import St2 from "./img/St2.png";
 import Git from "./img/Git.png";
 import reader from "./img/reader.png";
 import chat from "./img/chat.png";
+import coffee from "./img/coffee.png";
 
 export const Projects = [
   {
     id: 1,
-    title: "LinkedIn Clone",
-    img: LinkedIn,
-    url: "https://linkedin-clone-1ef65.web.app/",
-    tech: ["React, Styled Components, Firebase, Redux, Router"],
+    title: "COFFEE-STORE",
+    img: coffee,
+    url: "https://coffee-sten.netlify.app/",
+    tech: ["React, Firebase, Redux, Router, Authentication"],
     mob: "No",
-    git: "https://github.com/Stenbyte/LinkedIn_Clone",
+    git: "https://github.com/Stenbyte/CoffeStore",
   },
   {
     id: 2,
-    title: "READER-CHAT",
-    img: chat,
-    url: "https://readerchat-sten.netlify.app/",
-    tech: ["React, Firebase, Redux, Router, ContextAPI"],
-    mob: "No",
-    git: "https://github.com/Stenbyte/ReaderChat",
-  },
-  {
-    id: 3,
     title: "READER APP",
     img: reader,
     url: "https://reader-sten.netlify.app/",
@@ -36,6 +28,24 @@ export const Projects = [
     ],
     mob: "No",
     git: "https://github.com/Stenbyte/Reader",
+  },
+  {
+    id: 3,
+    title: "LinkedIn Clone",
+    img: LinkedIn,
+    url: "https://linkedin-clone-1ef65.web.app/",
+    tech: ["React, Styled Components, Firebase, Redux, Router"],
+    mob: "No",
+    git: "https://github.com/Stenbyte/LinkedIn_Clone",
+  },
+  {
+    id: 4,
+    title: "READER-CHAT",
+    img: chat,
+    url: "https://readerchat-sten.netlify.app/",
+    tech: ["React, Firebase, Redux, Router, ContextAPI"],
+    mob: "No",
+    git: "https://github.com/Stenbyte/ReaderChat",
   },
 ];
 export const Certificates = [
