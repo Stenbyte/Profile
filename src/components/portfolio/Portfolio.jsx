@@ -55,11 +55,11 @@ export default function Portfolio() {
               <h3>{d.title.toUpperCase()}</h3>
               {d.mob && (
                 <>
-                  <span>Technology used: {d.tech}</span>
+                  <span>Description: {d.tech}</span>
                   <p>Mobile responsive: {d.mob}</p>
                   <div className="links">
                     <a href={d.url} target="_blank" rel="noreferrer">
-                      Link
+                      Preview
                     </a>
                     <a href={d.git} target="_blank" rel="noreferrer">
                       Github

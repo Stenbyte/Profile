@@ -19,7 +19,7 @@ export default function Works({ num }) {
             REACT
           </p>
           <p className="p2" style={style}>
-            FIGMA
+            TYPESCRIPT
           </p>
           <p className="p3" style={style}>
             JAVASCRIPT
@@ -67,7 +67,7 @@ export default function Works({ num }) {
             REDUX
           </p>
           <p className="p18" style={style}>
-            AJAX
+            FIGMA
           </p>
           <p className="p19" style={style}>
             CI/CD
