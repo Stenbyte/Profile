@@ -16,27 +16,20 @@ export default function About({ num }) {
         <p>
           • Since 2018, I knew my calling was in Software Development
           <br />
-          • I have read many topics about computers and everything that is
-          related to them. Tried many boot camps, free courses, tutorials. Wrote
-          some dummy pages, apps.
+          • Last year I have completed full-time 17-months Full Stack Web
+          Development Program(React and Nodejs majors) at Business College
+          Helsinki
+          <br />• During my studies, I gained a vast knowledge of software
+          development and teamwork
+          <br />• All these skills were refined during my 6-months full-time
+          internship as a Frontend developer
           <br />
-          • January 2020, I applied for Full Stack Web Development Program(React
-          and Nodejs majors) at Business College Helsinki and was accepted
-          <br />
-          • It is a full-time 17-months intensive program, which covers both
-          Front and Backend
-          <br />• A lot of projects, teamwork, coding, and learning 24/7
-          <br /> • I chose to stick with Frontend.
-          <br />
-          • Enthusiastic and positive even in tough situations
-          <br />
-          • Since June 2021, Frontend Developer intern at Siciliamia startup.
-          <br />
-          • Good team player and continuous learner.
+          • I was converting Figma wireframes into React components, fixing
+          complex bugs, and improving department processes
           <br />• Software Development - is my biggest passion, which I spare no
           effort. I am a self-disciplined, organized, and open-minded person
           with a desire to improve who is looking to become a valuable part of a
-          team.
+          team
         </p>
       </div>
     </div>
