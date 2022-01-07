@@ -15,7 +15,7 @@ export default function Works({ num }) {
       <h1 className="h1">SKILLS</h1>
       <div className="card">
         <div className="sec">
-          <h1>Main</h1>
+          <h1>Frontend</h1>
           <div className="left">
             <div className="letf1">
               {" "}
@@ -84,7 +84,7 @@ export default function Works({ num }) {
             </div>
           </div>
           <div>
-            <h1>Desing/Planning</h1>
+            <h1>Design/Planning</h1>
             <div className="design">
               <p className="p13" style={style}>
                 FIGMA (2y)
