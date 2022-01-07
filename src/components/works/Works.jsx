@@ -44,10 +44,10 @@ export default function Works({ num }) {
             <div>
               {" "}
               <p className="p5" style={style}>
-                CSS (2,5y)
+                CSS (3y)
               </p>
               <p className="p6" style={style}>
-                HTML5 (2,5y)
+                HTML5 (3y)
               </p>
               <p className="p7" style={style}>
                 STYLED COMPONENTS (2y)
