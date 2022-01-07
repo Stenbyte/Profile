@@ -14,29 +14,83 @@
   }
   .card {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
-    width: 100vw;
+    gap: 1rem;
+    // width: 90vw;
     .sec {
-      width: 20vw;
+      width: 60%;
       // background-color: #fffcff;
       @include mobile {
         width: 40vw;
       }
     }
     .sec1 {
-      width: 20vw;
+      width: 50%;
+      height: 17rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       // background-color: #fffcff;
       @include mobile {
         width: 40vw;
       }
     }
+    .sec3 {
+      width: 40%;
+    }
     @include mobile {
       align-items: flex-start;
     }
   }
+  .left {
+    display: flex;
+    width: 30rem;
+    gap: 1rem;
+    div {
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .styling {
+    display: flex;
+    width: 35rem;
+    gap: 1rem;
+    div {
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .back {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    p {
+      text-align: center;
+    }
+  }
+  .control,
+  .design {
+    display: flex;
+    gap: 0.5rem;
+    width: 20rem;
+    p {
+      text-align: center;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    // text-decoration: underline;
+    margin-bottom: 0.5rem;
+  }
   .h1 {
     position: absolute;
+    text-decoration: none;
     top: 0;
     // left: 40vw;
     font-weight: 300;
@@ -48,187 +102,13 @@
     }
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.7;
-    text-align: center;
+    // text-align: center;
+    transition: all 3s ease-in 0.3s;
     @include mobile {
       font-size: 1rem;
       line-height: 3;
-    }
-  }
-  // .p1,
-  // .p2,
-  // .p3,
-  // .p4,
-  // .p5,
-  // .p6,
-  // .p7,
-  // .p8,
-  // .p9,
-  // .p10,
-  // .p11,
-  // .p12,
-  // .p13,
-  // .p14,
-  // .p15,
-  // .p16,
-  // .p17,
-  // .p18,
-  // .p19 {
-  //   position: absolute;
-  // }
-  .p1 {
-    top: 10vh;
-    left: 20vw;
-    font-weight: 300;
-    transition: all 3s ease-in 1s;
-  }
-  .p2 {
-    top: 18vh;
-    left: 32.4vw;
-    font-weight: 400;
-    transition: all 3s ease 2s;
-  }
-  .p3 {
-    top: 27vh;
-    left: 13vw;
-    font-weight: 300;
-    transition: all 4s ease-out 3.2s;
-    // @include mobile {
-    //   left: 7rem;
-    // }
-  }
-  .p4 {
-    top: 14vh;
-    left: 7vw;
-    font-weight: 400;
-    transition: all 3s ease-out 2.3s;
-  }
-  .p5 {
-    top: 31vh;
-    left: 25vw;
-    font-weight: 300;
-    transition: all 3s ease-out 2s;
-  }
-  .p6 {
-    top: 47vh;
-    left: 9vw;
-    font-weight: 400;
-    transition: all 3s ease-out 3s;
-  }
-
-  .p7 {
-    top: 55vh;
-    left: 25vw;
-    font-weight: 300;
-    transition: all 4s ease-out 3s;
-  }
-  .p8 {
-    top: 47vh;
-    left: 31vw;
-    font-weight: 400;
-    transition: all 4s ease-out 3s;
-    @include mobile {
-      left: 31vw;
-    }
-    @include middle {
-      left: 20vw;
-      top: 40vh;
-    }
-  }
-  .p9 {
-    top: 70vh;
-    left: 10vw;
-    font-weight: 300;
-    transition: all 4s ease-out 2s;
-  }
-  .p10 {
-    top: 74vh;
-    left: 30vw;
-    font-weight: 400;
-    transition: all 4s ease-out 2s;
-  }
-  .p11 {
-    top: 11vh;
-    right: 10vw;
-    font-weight: 300;
-    transition: all 4s ease-out 1s;
-    @include mobile {
-      top: 11vh;
-    }
-  }
-  .p12 {
-    top: 15vh;
-    right: 30vw;
-    font-weight: 400;
-    transition: all 3s ease-out 1s;
-  }
-  .p13 {
-    top: 31vh;
-    right: 33vw;
-    font-weight: 300;
-    transition: all 3s ease-out 3s;
-  }
-  .p16 {
-    top: 37vh;
-    right: 14vw;
-    font-weight: 300;
-    transition: all 4s ease-out 1.5s;
-  }
-  .p17 {
-    top: 70vh;
-    right: 35vw;
-    // margin: 30rem 1rem 1rem 0;
-    font-weight: 400;
-    transition: all 3s ease-out 1.9s;
-  }
-  .p18 {
-    top: 67vh;
-    right: 11vw;
-    font-weight: 300;
-    transition: all 4s ease-out 2.3s;
-  }
-  .p19 {
-    top: 55vh;
-    right: 27vw;
-    font-weight: 400;
-    transition: all 3s ease-out 2.7s;
-  }
-  .cardimg {
-    position: relative;
-    // top: 10rem;
-    .rot {
-      position: absolute;
-      top: 10vh;
-      left: 4.7vw;
-      // top: 31.9vh;
-      // left: 44.7vw;
-      // margin: 0 2.4rem 3.3rem 0;
-      width: 7rem;
-      transition: all 5s ease-in-out;
-      @include mobile {
-        width: 4.5rem;
-        margin: -2rem 0 0 -1.5rem;
-      }
-      @include middle {
-        width: 13vw;
-
-        // margin: -1.3rem 0 0 -1rem;
-        top: 44.9vh;
-        left: 47.4vw;
-      }
-    }
-
-    .first {
-      width: 20vw;
-      @include mobile {
-        width: 11rem;
-        display: none;
-      }
-      @include middle {
-        width: 7rem;
-        display: none;
-      }
     }
   }
 }
