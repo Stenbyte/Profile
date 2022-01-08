@@ -108,13 +108,13 @@ export default function Works({ num }) {
               FIREBASE (1y)
             </p>
             <p className="p16" style={style}>
-              Nodejs (6month)
+              NODEJS (6month)
             </p>
             <p className="p17" style={style}>
-              Express (6month)
+              EXPRESS (6month)
             </p>
             <p className="p18" style={style}>
-              MongoDB (6month)
+              MONGODB (6month)
             </p>
             <p className="p188" style={style}>
               AWS (6month)
