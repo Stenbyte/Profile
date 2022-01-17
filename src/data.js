@@ -1,11 +1,5 @@
-// import LinkedIn from "./img/linkedIn.png";
-// import github from "./img/github.png";
-import St from "./img/St.png";
-import St1 from "./img/St1.png";
-import St2 from "./img/St2.png";
-import Git from "./img/Git.png";
 import reader from "./img/reader.png";
-import chat from "./img/chat.png";
+
 import coffee from "./img/coffee.png";
 import todo from "./img/todo.png";
 
@@ -40,39 +34,5 @@ export const Projects = [
     ],
     mob: "No",
     git: "https://github.com/Stenbyte/Reader",
-  },
-
-  {
-    id: 4,
-    title: "READER-CHAT",
-    img: chat,
-    url: "https://readerchat-sten.netlify.app/",
-    tech: [
-      "Reader chat app. Made with React, Firebase, Redux, Router, ContextAPI",
-    ],
-    mob: "No",
-    git: "https://github.com/Stenbyte/ReaderChat",
-  },
-];
-export const Certificates = [
-  {
-    id: 1,
-    title: "React",
-    img: St,
-  },
-  {
-    id: 2,
-    title: "Javascript",
-    img: St1,
-  },
-  {
-    id: 3,
-    title: "Git",
-    img: Git,
-  },
-  {
-    id: 4,
-    title: "Web",
-    img: St2,
   },
 ];

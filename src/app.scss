@@ -9,9 +9,9 @@
   .sections {
     height: calc(100vh - 70px);
     width: 100%;
-    background-color: $bckMain;
+    background-color: $white;
     position: relative;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     top: 70px;
     scroll-behavior: smooth;
     flex-direction: column;

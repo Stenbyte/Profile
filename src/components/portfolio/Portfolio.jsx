@@ -1,72 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./portfolio.scss";
-import PortfolioList from "../portfolioList/PortfolioList";
+import tags from "../../img/tags.svg";
+import snake from "../../img/snake1.svg";
+import playBtn from "../../img/playBtn.svg";
 
-import { Projects, Certificates } from "../../data";
+import { Projects as data } from "../../data";
 
-export default function Portfolio() {
-  const [selected, setSelected] = useState("projects");
-  const [data, setData] = useState([]);
-
-  const list = [
-    {
-      id: "projects",
-      title: "Projects",
-    },
-    {
-      id: "cert",
-      title: "Certificates",
-    },
-  ];
-  useEffect(() => {
-    switch (selected) {
-      case "projects":
-        setData(Projects);
-        break;
-      case "cert":
-        setData(Certificates);
-        break;
-      default:
-        setData([]);
-        break;
-    }
-  }, [selected]);
+export default function Portfolio({ num }) {
+  const style = {
+    transform: `translateY(${num >= 1242 ? -1 : 0}rem)`,
+  };
   return (
     <div className="portfolio" id="portfolio">
-      <h1>ACHIEVEMENTS</h1>
-      <ul>
-        {list.map((i) => (
-          <PortfolioList
-            title={i.title}
-            id={i.id}
-            key={i.id}
-            active={selected === i.id}
-            setSelected={setSelected}
-          />
-        ))}
-      </ul>
+      <h1>Projects</h1>
+      <img src={snake} alt="" className="snake" />
+      <img src={snake} alt="" className="snake1" />
+      <img src={playBtn} alt="" className="play" />
       <div className="container">
-        {data.map((d) => (
-          <div className="item" key={d.id}>
-            <a href={d.url} target="_blank" rel="noreferrer">
-              <img src={d.img} alt={d.title} />
-            </a>
-            <div className="wrapper">
-              <h3>{d.title.toUpperCase()}</h3>
-              {d.mob && (
-                <>
-                  <span>Description: {d.tech}</span>
-                  <p>Mobile responsive: {d.mob}</p>
-                  <div className="links">
-                    <a href={d.url} target="_blank" rel="noreferrer">
-                      Preview
-                    </a>
-                    <a href={d.git} target="_blank" rel="noreferrer">
-                      Github
-                    </a>
-                  </div>
-                </>
-              )}
+        {data.map((pro, i) => (
+          <div className="first" key={i}>
+            <div className="second">
+              <div className="text">
+                <div className="head">
+                  <img src={tags} alt="" />
+                  <h2>{pro.title}</h2>
+                </div>
+                <p>{pro.tech}</p>
+                <div className="btn">
+                  <a href={pro.url} target="_blank" rel="noreferrer">
+                    <button>View</button>
+                  </a>
+                  <a href={pro.git} target="_blank" rel="noreferrer">
+                    <button>Github</button>
+                  </a>
+                </div>
+              </div>
+              <div className="pic">
+                <img src={pro.img} alt="" style={style} />
+              </div>
             </div>
           </div>
         ))}

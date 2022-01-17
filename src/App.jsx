@@ -22,7 +22,7 @@ function App() {
       <div className="sections" onScroll={scrollHandle}>
         <Intro />
         <About num={num} />
-        <Portfolio />
+        <Portfolio num={num} />
         <Works num={num} />
         <Contact />
       </div>
