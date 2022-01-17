@@ -1,7 +1,7 @@
 import React from "react";
 import "./topbar.scss";
 
-import Logo from "../../img/S.png";
+import Logo from "../../img/sun.svg";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (

@@ -3,7 +3,7 @@
 .menu {
   width: 20vw;
   height: 100vh;
-  background-color: $mainColor;
+  background-color: $blue;
   position: fixed;
   top: 0;
   right: -23vw;
@@ -37,7 +37,7 @@
       margin-bottom: 40px;
       height: 30px;
       a {
-        color: $txtColor;
+        color: $white;
         font-size: 20px;
         font-weight: 300;
         text-decoration: none;

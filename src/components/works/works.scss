@@ -1,92 +1,15 @@
 @import "../../global.scss";
 .works {
-  background-color: $bckMain;
+  // background-color: $bckMain;
+  background: url("../../img/back.svg") no-repeat center center;
+  background-size: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  // width: 100%;
-  // flex-direction: column;
-  // transition: all 2s ease-out;
   @include mobile {
     height: 100vh;
     align-items: center;
-  }
-  .card {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    gap: 1rem;
-    // width: 90vw;
-    .sec {
-      width: 60%;
-      // background-color: #fffcff;
-      @include mobile {
-        width: 40vw;
-      }
-    }
-    .sec1 {
-      width: 50%;
-      height: 17rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      // background-color: #fffcff;
-      @include mobile {
-        width: 40vw;
-      }
-    }
-    .sec3 {
-      width: 40%;
-    }
-    @include mobile {
-      align-items: flex-start;
-    }
-  }
-  .left {
-    display: flex;
-    width: 30rem;
-    gap: 1rem;
-    div {
-      p {
-        text-align: center;
-      }
-    }
-  }
-  .styling {
-    display: flex;
-    width: 35rem;
-    gap: 1rem;
-    div {
-      p {
-        text-align: center;
-      }
-    }
-  }
-  .back {
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    p {
-      text-align: center;
-    }
-  }
-  .control,
-  .design {
-    display: flex;
-    gap: 0.5rem;
-    width: 20rem;
-    p {
-      text-align: center;
-    }
-  }
-
-  h1 {
-    text-align: center;
-    color: white;
-    font-weight: 300;
-    // text-decoration: underline;
-    margin-bottom: 0.5rem;
   }
   .h1 {
     position: absolute;
@@ -95,20 +18,159 @@
     // left: 40vw;
     font-weight: 300;
     font-size: 50px;
-    color: #fffcff;
+    color: $textColor;
     @include mobile {
       font-size: 20px;
       top: 1rem;
     }
   }
-  p {
-    font-size: 1.3rem;
-    line-height: 1.7;
-    // text-align: center;
-    transition: all 3s ease-in 0.3s;
-    @include mobile {
-      font-size: 1rem;
-      line-height: 3;
+  .grid {
+    display: grid;
+    width: 100%;
+    height: 85%;
+    margin-top: 5rem;
+    grid-template-columns: 25rem 30rem 20rem 20rem;
+    grid-template-rows: auto;
+    border: 1px solid black;
+    gap: 1rem;
+    grid-template-areas:
+      "front  styling . ."
+      "control design . back";
+    .front {
+      grid-area: front;
+      border: 1px solid black;
+      h2 {
+        text-align: center;
+      }
+      .first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+          background-color: $textColor;
+          margin: 0.4rem;
+          text-align: center;
+          border-radius: 5px;
+          color: white;
+          height: 3rem;
+          width: 10rem;
+        }
+      }
+    }
+    .styling {
+      grid-area: styling;
+      border: 1px solid black;
+    }
+    .control {
+      grid-area: control;
+      border: 1px solid black;
     }
   }
 }
+
+///
+// .card {
+//   display: flex;
+//   align-items: flex-start;
+//   justify-content: space-evenly;
+//   gap: 1rem;
+//   padding: 1rem;
+//   width: 100vw;
+
+//   border-radius: 100px 100px;
+//   .sec {
+//     width: 60%;
+//     // border: 1px solid white;
+//     // background-color: #fffcff;
+//     @include mobile {
+//       width: 40vw;
+//     }
+//     .left {
+//       display: flex;
+//       justify-content: space-evenly;
+//       width: 30rem;
+//       gap: 1rem;
+//       div {
+//         p {
+//           text-align: center;
+//         }
+//       }
+//     }
+//     .styling {
+//       display: flex;
+//       justify-content: space-evenly;
+//       // min-width: 20rem;
+//       gap: 1rem;
+//       div {
+//         p {
+//           text-align: center;
+//         }
+//         .p5,
+//         .p6 {
+//           width: 1rem;
+//         }
+//       }
+//     }
+//   }
+//   .sec1 {
+//     width: 50%;
+//     // border: 1px solid white;
+//     height: 17rem;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     // background-color: #fffcff;
+//     @include mobile {
+//       width: 40vw;
+//     }
+//     .control,
+//     .design {
+//       display: flex;
+//       gap: 0.5rem;
+//       width: 20rem;
+//       p {
+//         text-align: center;
+//       }
+//     }
+//   }
+//   .sec3 {
+//     width: 40%;
+//     .back {
+//       display: flex;
+//       flex-direction: column;
+//       width: 20rem;
+//       p {
+//         text-align: center;
+//       }
+//     }
+//   }
+//   @include mobile {
+//     align-items: flex-start;
+//   }
+// }
+
+// h1 {
+//   text-align: center;
+//   color: $textColor;
+//   font-weight: 300;
+//   text-decoration: underline;
+//   margin-bottom: 0.5rem;
+// }
+
+// p {
+//   font-size: 1.3rem;
+//   line-height: 1.7;
+//   background-color: white;
+//   border-radius: 5px;
+//   min-width: 8rem;
+//   height: 3rem;
+//   margin: 0.3rem;
+//   padding: 0.3rem;
+//   // text-align: center;
+//   transition: all 3s ease-in 0.3s;
+//   @include mobile {
+//     font-size: 1rem;
+//     line-height: 3;
+//   }
+// }

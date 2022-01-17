@@ -5,7 +5,7 @@ export default function Works({ num }) {
   // console.log(num);
 
   const style = {
-    color: `${num >= 1400 ? "#a9d6e5" : "#012a4a"}`,
+    color: `${num >= 1400 ? "#4c2a85" : "#6b7fd7"}`,
   };
   // const style1 = {
   //   transform: `rotate(${num >= 1400 ? "250" : "0"}deg)`,
@@ -13,7 +13,29 @@ export default function Works({ num }) {
   return (
     <div className="works" id="works">
       <h1 className="h1">SKILLS</h1>
-      <div className="card">
+      <div className="grid">
+        <div className="front" style={{ color: "black" }}>
+          <h2>Frontend</h2>
+          <div className="first">
+            <div className="block">
+              <p className="p1">JAVASCRIPT (2,5y)</p>
+              <p className="p2">TYPESCRIPT (1,5y)</p>
+            </div>
+            <div className="block1">
+              <p className="p3">REACT (2y)</p>
+              <p className="p4">REDUX (1,5y)</p>
+            </div>
+            <p className="p44">RESTFUL API (1,5y)</p>
+          </div>
+        </div>
+        <div className="styling" style={{ color: "black" }}>
+          styling
+        </div>
+        <div className="control" style={{ color: "black" }}>
+          control
+        </div>
+      </div>
+      {/* <div className="card">
         <div className="sec">
           <h1>Frontend</h1>
           <div className="left">
@@ -42,7 +64,6 @@ export default function Works({ num }) {
           <h1>Styling</h1>
           <div className="styling">
             <div>
-              {" "}
               <p className="p5" style={style}>
                 CSS (3y)
               </p>
@@ -121,7 +142,7 @@ export default function Works({ num }) {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

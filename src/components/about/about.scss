@@ -6,10 +6,10 @@
   flex-direction: column;
   position: relative;
   scroll-behavior: smooth;
-  background: url("https://source.unsplash.com/WLUHO9A_xik/2000x1000") center
-    center no-repeat;
+  background: url("../../img/about.jpeg") center center no-repeat;
+  background-size: cover;
   overflow: hidden;
-  background-color: $bckMain;
+  background-color: rgba($color: #6b7fd7, $alpha: 0.3);
   background-blend-mode: multiply;
   .me {
     position: absolute;
@@ -29,7 +29,8 @@
     position: absolute;
     border-radius: 2px;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    // background-color: #8e8e8e5d;
+    backdrop-filter: blur(13px);
     transition: all 1s ease-out;
     @include mobile {
       width: 80vw;

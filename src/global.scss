@@ -1,11 +1,20 @@
 // $mainColor: #15023a;
-$mainColor: #013a63;
-$bckMain: #012a4a;
-$textColor: #01497c;
-$txtColor: #a9d6e5;
+// $mainColor: #013a63;
+$mainColor: #4c2a85;
+// $bckMain: #012a4a;
+$bckMain: #6b7fd7;
+$textColor: #4c2a85;
+$txtColor: #c8eefa;
+// $txtColor: #320e3b;
 $yellow: #ffff3f;
-$width: 768px;
 
+//
+$red: #df2aa3;
+$blue: #4b07e8;
+$green: #2cff80;
+$white: #ffff;
+$width: 768px;
+//
 @mixin mobile {
   @media (max-width: #{$width}) {
     @content;
