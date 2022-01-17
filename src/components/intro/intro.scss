@@ -2,108 +2,119 @@
 
 .intro {
   display: flex;
-  background-color: $bckMain;
-  flex-direction: column;
+  background-image: url("../../img/introBack.svg");
+  background-size: 100%;
+  // transform: rotate(90deg);
+  position: relative;
+  inset: 0;
   @include mobile {
     flex-direction: column;
     align-items: center;
   }
-  @include middle {
-    align-items: center;
-  }
-  .top {
+  .left {
+    position: relative;
+    height: 100%;
+    width: 70%;
+    padding: 1em;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
     flex-direction: column;
-    padding: 1rem;
-    @include mobile {
-      width: 90vw;
-      height: 50vh;
-    }
-    @include middle {
-      width: 90vw;
-      height: 50vh;
-    }
-    p {
-      color: $mainColor;
-      letter-spacing: 2px;
-      padding-top: 1rem;
-      line-height: 1.7;
-      @include mobile {
-        letter-spacing: 1.3px;
+    .leftTop {
+      width: 60%;
+      height: 30%;
+      padding: 1em;
+      // background-color: lightblue;
+      h1 {
+        line-height: 1.5em;
+        color: $white;
+        span {
+          color: $green;
+        }
       }
-      @include middle {
-        letter-spacing: 1.1px;
-        font-size: 0.7rem;
+      p {
+        color: $white;
       }
     }
-    .span {
-      font-weight: 400;
-      color: $mainColor;
-      margin-left: 43rem;
-      @include mobile {
-        margin-left: 36rem;
-      }
-      @include middle {
-        margin-left: 11rem;
-        font-size: 0.7rem;
-      }
-    }
-    .top1 {
+    .leftBottom {
       display: flex;
       align-items: center;
-      margin-top: 6rem;
-      h3 {
-        color: $txtColor;
-        letter-spacing: 5px;
-        font-weight: 300;
-        font-size: 22px;
-        span {
-          color: $yellow;
-        }
-        @include mobile {
-          letter-spacing: 1px;
-          font-size: 18px;
-        }
-        @include middle {
-          margin-top: 1rem;
-          letter-spacing: 1.1px;
-          font-size: 1rem;
-        }
+      justify-content: flex-start;
+      padding: 1em;
+      width: 70%;
+      P {
+        width: 40%;
+        color: $white;
+        margin-right: 3em;
       }
+    }
+    .cloud {
+      position: absolute;
+      top: 0;
+      left: 70%;
+      filter: drop-shadow(7px 7px 3px $white);
+    }
+    .plus {
+      position: absolute;
+      width: 10%;
+      top: 80%;
+      left: 55%;
+    }
+    .dots {
+      position: absolute;
+      top: 90%;
+      left: 7%;
+      width: 60%;
     }
   }
-  .bottom {
+  .center {
+    position: absolute;
+
     display: flex;
     align-items: center;
-    height: 20rem;
     justify-content: center;
-    margin-top: 1rem;
-    @include mobile {
-      height: 20rem;
-      width: 20rem;
-    }
-    @include middle {
-      margin-top: -5rem;
-    }
-    img {
-      width: 250px;
+    width: 30%;
+    height: 40%;
+    top: 28%;
+    left: 50%;
 
-      animation: pulse 7s infinite;
-      @include mobile {
-        width: 11rem;
-      }
+    .me {
+      width: 50%;
+      filter: drop-shadow(10px 10px $red) brightness(110%);
+      border: 1px $green;
+      border-style: solid;
     }
-    @keyframes pulse {
-      0% {
-        filter: drop-shadow(0 0 0.5rem #000000cf);
-      }
-      50% {
-        filter: drop-shadow(0 0 1rem #000000cf);
-      }
-      100% {
-        filter: drop-shadow(0 0 0.5rem #000000cf);
+  }
+  .right {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    .plus1 {
+      transform: rotate(90deg);
+      position: absolute;
+      width: 20%;
+      top: 10%;
+      left: -1%;
+    }
+    .dots1 {
+      transform: rotate(90deg);
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      width: 120%;
+    }
+    .star {
+      position: absolute;
+      top: 80%;
+      left: 30%;
+      animation: move 10s infinite ease-in-out;
+      @keyframes move {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
       }
     }
   }

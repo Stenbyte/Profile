@@ -25,6 +25,21 @@
         text-decoration: none;
         img {
           height: 3.5em;
+          filter: drop-shadow(2px 2px 2px yellow);
+          animation: sun 3s ease;
+          animation-iteration-count: 3;
+          @keyframes sun {
+            0% {
+              transform: rotate3d(0);
+            }
+            50% {
+              transform: rotate3d(1, 1, 0, 200deg);
+            }
+
+            0% {
+              transform: rotate3d(0);
+            }
+          }
         }
       }
     }
