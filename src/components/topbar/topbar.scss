@@ -29,14 +29,14 @@
           animation-iteration-count: 3;
           @keyframes sun {
             0% {
-              transform: rotate3d(0);
+              transform: rotate3d(0, 0, 0);
             }
             50% {
               transform: rotate3d(1, 1, 0, 200deg);
             }
 
             0% {
-              transform: rotate3d(0);
+              transform: rotate3d(0, 0, 0);
             }
           }
         }

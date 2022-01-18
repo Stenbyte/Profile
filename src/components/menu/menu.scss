@@ -26,6 +26,28 @@
   }
   .card {
     width: 100%;
+    ul {
+      margin-top: 0;
+      padding: 0;
+      list-style: none;
+      width: 80%;
+      margin-left: 2rem;
+      position: relative;
+
+      li {
+        margin-bottom: 40px;
+        height: 30px;
+        a {
+          color: $white;
+          font-size: 20px;
+          font-weight: 300;
+          text-decoration: none;
+          @include mobile {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
     .box {
       width: 2rem;
       height: 2rem;
@@ -54,28 +76,6 @@
         100% {
           bottom: 10%;
           right: 9%;
-        }
-      }
-    }
-  }
-  ul {
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    width: 80%;
-    margin-left: 2rem;
-    position: relative;
-
-    li {
-      margin-bottom: 40px;
-      height: 30px;
-      a {
-        color: $white;
-        font-size: 20px;
-        font-weight: 300;
-        text-decoration: none;
-        @include mobile {
-          font-size: 0.8rem;
         }
       }
     }

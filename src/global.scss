@@ -1,10 +1,9 @@
-//
 $red: #df2aa3;
 $blue: #4b07e8;
 $green: #2cff80;
 $white: #fffcff;
 $width: 768px;
-//
+
 @mixin mobile {
   @media (max-width: #{$width}) {
     @content;
