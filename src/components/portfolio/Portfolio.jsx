@@ -42,6 +42,7 @@ export default function Portfolio({ num }) {
           </div>
         ))}
       </div>
+      <div className="bottomBox"></div>
     </div>
   );
 }

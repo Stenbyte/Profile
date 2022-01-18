@@ -1,7 +1,6 @@
 @import "../../global.scss";
 .works {
-  // background-color: $bckMain;
-  background: url("../../img/back.svg") no-repeat center center;
+  background-color: $white;
   background-size: 100%;
   display: flex;
   align-items: center;
@@ -11,166 +10,74 @@
     height: 100vh;
     align-items: center;
   }
+  .cloud {
+    position: absolute;
+    transition: all 1s ease-in-out;
+    // filter: drop-shadow(10px -10px 5px $blue);
+  }
   .h1 {
     position: absolute;
     text-decoration: none;
     top: 0;
-    // left: 40vw;
     font-weight: 300;
-    font-size: 50px;
-    color: $textColor;
+    color: $blue;
     @include mobile {
       font-size: 20px;
       top: 1rem;
     }
   }
   .grid {
-    display: grid;
+    // background-color: red;
     width: 100%;
-    height: 85%;
-    margin-top: 5rem;
-    grid-template-columns: 25rem 30rem 20rem 20rem;
-    grid-template-rows: auto;
-    border: 1px solid black;
-    gap: 1rem;
-    grid-template-areas:
-      "front  styling . ."
-      "control design . back";
-    .front {
-      grid-area: front;
-      border: 1px solid black;
-      h2 {
-        text-align: center;
-      }
-      .first {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        p {
-          background-color: $textColor;
-          margin: 0.4rem;
-          text-align: center;
-          border-radius: 5px;
-          color: white;
-          height: 3rem;
-          width: 10rem;
+    height: 90%;
+    padding: 1em;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 30%;
+      padding: 1em;
+      p {
+        color: $blue;
+        font-size: 1.3rem;
+        opacity: 0.5;
+        transition: all 1s ease;
+        cursor: default;
+        &:hover {
+          opacity: 1;
         }
       }
     }
-    .styling {
-      grid-area: styling;
-      border: 1px solid black;
+    .mid {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 40%;
+      img {
+        width: 5em;
+        // filter: drop-shadow(-2px -2px 10px $red);
+        transition: all 1s ease;
+        &:hover {
+          transform: scale(1.1) rotate(10deg);
+        }
+      }
     }
-    .control {
-      grid-area: control;
-      border: 1px solid black;
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1em;
+      height: 30%;
+      p {
+        color: $blue;
+        font-size: 1.3rem;
+        opacity: 0.5;
+        transition: all 1s ease;
+        cursor: default;
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
   }
 }
-
-///
-// .card {
-//   display: flex;
-//   align-items: flex-start;
-//   justify-content: space-evenly;
-//   gap: 1rem;
-//   padding: 1rem;
-//   width: 100vw;
-
-//   border-radius: 100px 100px;
-//   .sec {
-//     width: 60%;
-//     // border: 1px solid white;
-//     // background-color: #fffcff;
-//     @include mobile {
-//       width: 40vw;
-//     }
-//     .left {
-//       display: flex;
-//       justify-content: space-evenly;
-//       width: 30rem;
-//       gap: 1rem;
-//       div {
-//         p {
-//           text-align: center;
-//         }
-//       }
-//     }
-//     .styling {
-//       display: flex;
-//       justify-content: space-evenly;
-//       // min-width: 20rem;
-//       gap: 1rem;
-//       div {
-//         p {
-//           text-align: center;
-//         }
-//         .p5,
-//         .p6 {
-//           width: 1rem;
-//         }
-//       }
-//     }
-//   }
-//   .sec1 {
-//     width: 50%;
-//     // border: 1px solid white;
-//     height: 17rem;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     // background-color: #fffcff;
-//     @include mobile {
-//       width: 40vw;
-//     }
-//     .control,
-//     .design {
-//       display: flex;
-//       gap: 0.5rem;
-//       width: 20rem;
-//       p {
-//         text-align: center;
-//       }
-//     }
-//   }
-//   .sec3 {
-//     width: 40%;
-//     .back {
-//       display: flex;
-//       flex-direction: column;
-//       width: 20rem;
-//       p {
-//         text-align: center;
-//       }
-//     }
-//   }
-//   @include mobile {
-//     align-items: flex-start;
-//   }
-// }
-
-// h1 {
-//   text-align: center;
-//   color: $textColor;
-//   font-weight: 300;
-//   text-decoration: underline;
-//   margin-bottom: 0.5rem;
-// }
-
-// p {
-//   font-size: 1.3rem;
-//   line-height: 1.7;
-//   background-color: white;
-//   border-radius: 5px;
-//   min-width: 8rem;
-//   height: 3rem;
-//   margin: 0.3rem;
-//   padding: 0.3rem;
-//   // text-align: center;
-//   transition: all 3s ease-in 0.3s;
-//   @include mobile {
-//     font-size: 1rem;
-//     line-height: 3;
-//   }
-// }

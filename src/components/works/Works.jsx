@@ -1,148 +1,71 @@
 import React from "react";
 import "./works.scss";
+import rt from "../../img/react.svg";
+import js from "../../img/js.svg";
+import ts from "../../img/ts.svg";
+import api from "../../img/api.svg";
+import cloud from "../../img/cloud1.svg";
 
 export default function Works({ num }) {
-  // console.log(num);
-
-  const style = {
-    color: `${num >= 1400 ? "#4c2a85" : "#6b7fd7"}`,
+  let style = {
+    transform: `translateY(${num >= 1870 ? -1 : 0}rem)`,
   };
-  // const style1 = {
-  //   transform: `rotate(${num >= 1400 ? "250" : "0"}deg)`,
-  // };
+  console.log(window);
   return (
     <div className="works" id="works">
-      <h1 className="h1">SKILLS</h1>
+      <h1 className="h1">Skills</h1>
+      <img
+        src={cloud}
+        alt=""
+        className="cloud"
+        style={{
+          top: "7%",
+          left: "15%",
+          transform: `translateY(${num >= 1870 ? 2 : 0}rem)`,
+        }}
+      />
+      <img
+        src={cloud}
+        alt=""
+        className="cloud"
+        style={{
+          bottom: "7%",
+          left: "35%",
+          transform: `translateY(${num >= 1870 ? 2 : 0}rem)`,
+        }}
+      />
+      <img
+        src={cloud}
+        alt=""
+        className="cloud"
+        style={{
+          top: "23%",
+          right: "15%",
+          transform: `translateY(${num >= 1870 ? 2 : 0}rem)`,
+        }}
+      />
       <div className="grid">
-        <div className="front" style={{ color: "black" }}>
-          <h2>Frontend</h2>
-          <div className="first">
-            <div className="block">
-              <p className="p1">JAVASCRIPT (2,5y)</p>
-              <p className="p2">TYPESCRIPT (1,5y)</p>
-            </div>
-            <div className="block1">
-              <p className="p3">REACT (2y)</p>
-              <p className="p4">REDUX (1,5y)</p>
-            </div>
-            <p className="p44">RESTFUL API (1,5y)</p>
-          </div>
+        <div className="top">
+          <p style={style}>Redux</p>
+          <p style={style}>Css</p>
+          <p style={style}>Html</p>
+          <p style={style}>Sass</p>
+          <p style={style}>Mui</p>
         </div>
-        <div className="styling" style={{ color: "black" }}>
-          styling
+        <div className="mid">
+          <img src={rt} alt="" />
+          <img src={js} alt="" />
+          <img src={api} alt="" />
+          <img src={ts} alt="" />
         </div>
-        <div className="control" style={{ color: "black" }}>
-          control
+        <div className="bottom">
+          <p style={style}>Git</p>
+          <p style={style}>Github</p>
+          <p style={style}>UX/UI</p>
+          <p style={style}>CI/CD</p>
+          <p style={style}>Figma</p>
         </div>
       </div>
-      {/* <div className="card">
-        <div className="sec">
-          <h1>Frontend</h1>
-          <div className="left">
-            <div className="letf1">
-              {" "}
-              <p className="p1" style={style}>
-                JAVASCRIPT (2,5y)
-              </p>
-              <p className="p2" style={style}>
-                TYPESCRIPT (1,5y)
-              </p>
-              <p className="p3" style={style}>
-                REACT (2y)
-              </p>
-            </div>
-            <div className="left2">
-              {" "}
-              <p className="p4" style={style}>
-                REDUX (1,5y)
-              </p>
-              <p className="p44" style={style}>
-                REST API (1,5y)
-              </p>
-            </div>
-          </div>
-          <h1>Styling</h1>
-          <div className="styling">
-            <div>
-              <p className="p5" style={style}>
-                CSS (3y)
-              </p>
-              <p className="p6" style={style}>
-                HTML5 (3y)
-              </p>
-              <p className="p7" style={style}>
-                STYLED COMPONENTS (2y)
-              </p>
-            </div>
-            <div>
-              {" "}
-              <p className="p8" style={style}>
-                SASS (2y)
-              </p>
-              <p className="p10" style={style}>
-                MUI (1y)
-              </p>
-              <p className="p11" style={style}>
-                BOOTSTRAP (1y)
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="sec1">
-          <div>
-            <h1>Controll/ Collaboration</h1>
-            <div className="control">
-              <p className="p12" style={style}>
-                GIT (2y)
-              </p>
-              <p className="p122" style={style}>
-                GITHUB (2y)
-              </p>
-              <p className="p123" style={style}>
-                CI/CD (1y)
-              </p>
-            </div>
-          </div>
-          <div>
-            <h1>Design/Planning</h1>
-            <div className="design">
-              <p className="p13" style={style}>
-                FIGMA (2y)
-              </p>
-              <p className="p133" style={style}>
-                UX/UI (2y)
-              </p>
-              <p className="p134" style={style}>
-                TRELLO (2y)
-              </p>
-              <p className="p135" style={style}>
-                MIRO (1y)
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="sec3">
-          <h1>Backend</h1>
-          <div className="back">
-            <p className="p19" style={style}>
-              FIREBASE (1y)
-            </p>
-            <p className="p16" style={style}>
-              NODEJS (6month)
-            </p>
-            <p className="p17" style={style}>
-              EXPRESS (6month)
-            </p>
-            <p className="p18" style={style}>
-              MONGODB (6month)
-            </p>
-            <p className="p188" style={style}>
-              AWS (6month)
-            </p>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }
