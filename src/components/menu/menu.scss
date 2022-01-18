@@ -17,10 +17,7 @@
     width: 25vw;
     right: -60vw;
   }
-  @include middle {
-    width: 45vw;
-    right: -60vw;
-  }
+
   &.active {
     right: 0;
     @include mobile {
