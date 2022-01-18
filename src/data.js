@@ -9,7 +9,9 @@ export const Projects = [
     title: "TODO",
     img: todo,
     url: "https://todo-sten.netlify.app/",
-    tech: ["Drag and Drop todo app. Made with Typescript, React"],
+    tech: [
+      "Draggable todo app. Made with Typescript and React. I'm using session storage as a simple data storage. ",
+    ],
     mob: "No",
     git: "https://github.com/Stenbyte/Todo",
   },
@@ -19,7 +21,7 @@ export const Projects = [
     img: coffee,
     url: "https://coffee-sten.netlify.app/",
     tech: [
-      "E-commerce app. Made with React, Firebase, Redux, Router, Authentication",
+      "E-commerce app. Made with React, Redux, Router. I'm using Google Authentication and Firebase as a data storage.",
     ],
     mob: "No",
     git: "https://github.com/Stenbyte/CoffeStore",
@@ -30,7 +32,7 @@ export const Projects = [
     img: reader,
     url: "https://reader-sten.netlify.app/",
     tech: [
-      "Social media app for book lovers. Made with React, Firebase, Redux, Router, Google API, Merriam-Webster API, New York Times API",
+      "Social media app for book lovers. Made with React, Redux, Router. I'm using Firebase as a data storage. API: Google Books, Merriam-Webster.",
     ],
     mob: "No",
     git: "https://github.com/Stenbyte/Reader",

@@ -53,7 +53,7 @@ export default function Works({ num }) {
           <p style={style}>Mui</p>
         </div>
         <div className="mid">
-          <img src={rt} alt="" />
+          <img src={rt} alt="" className="rt" />
           <img src={js} alt="" />
           <img src={api} alt="" />
           <img src={ts} alt="" />

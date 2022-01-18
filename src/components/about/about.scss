@@ -30,7 +30,7 @@
     z-index: 10;
     font-weight: 300;
     // font-size: 50px;
-    color: $blue;
+    color: black;
     @include mobile {
       font-size: 20px;
       top: 1rem;
@@ -57,7 +57,7 @@
     margin-top: 20px;
     padding: 1rem;
     overflow: scroll;
-    color: $blue;
+    color: black;
 
     font-weight: 300;
     transition: all 1s ease-out;

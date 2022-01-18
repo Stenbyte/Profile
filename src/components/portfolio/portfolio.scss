@@ -33,7 +33,7 @@
     bottom: 5%;
     right: 5%;
     width: 7em;
-    border: $green 1px solid;
+    border: yellow 1px solid;
     border-radius: 5px;
   }
   .snake1 {
@@ -44,9 +44,11 @@
   .container {
     background-color: $white;
     width: 70%;
+    // height: 60%;
     border-radius: 5px;
     white-space: nowrap;
     overflow: scroll;
+    overflow-y: hidden;
 
     .first {
       display: inline-block;
@@ -60,11 +62,15 @@
         height: 20rem;
 
         .text {
-          border: 1px solid $blue;
+          border: 1px solid black;
           border-radius: 5px;
           height: 100%;
           width: 50%;
           padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-evenly;
           .head {
             display: flex;
             align-items: flex-start;
@@ -77,21 +83,23 @@
               margin-right: 0.5em;
             }
           }
-
-          p {
-            width: 20rem;
-            margin-top: 0.5em;
-            // min-height: 10rem;
-            white-space: pre-wrap;
-            line-height: 2rem;
-            color: $blue;
+          .desc {
+            p {
+              width: 20rem;
+              margin-top: 0.5em;
+              min-height: 10rem;
+              white-space: pre-wrap;
+              line-height: 2rem;
+              color: black;
+            }
           }
+
           .btn {
             padding-top: 1em;
             a {
               button {
-                background-color: $green;
-                color: $blue;
+                background-color: $red;
+                color: $white;
                 font-size: 1rem;
                 border-radius: 5px;
                 padding: 0.6em 1em;
@@ -100,7 +108,7 @@
                 transition: all 0.4s ease;
                 cursor: pointer;
                 &:hover {
-                  background-color: $red;
+                  background-color: black;
                   color: $white;
                 }
               }
@@ -109,7 +117,7 @@
         }
         .pic {
           height: 100%;
-          border: 1px dashed $blue;
+          border: 1px dashed black;
           border-radius: 5px;
           display: flex;
           align-items: center;

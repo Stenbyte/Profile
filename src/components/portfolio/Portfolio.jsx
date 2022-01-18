@@ -25,7 +25,10 @@ export default function Portfolio({ num }) {
                   <img src={tags} alt="" />
                   <h2>{pro.title}</h2>
                 </div>
-                <p>{pro.tech}</p>
+                <div className="desc">
+                  <p>{pro.tech}</p>
+                  <h4>Mobile responsive: {pro.mob}</h4>
+                </div>
                 <div className="btn">
                   <a href={pro.url} target="_blank" rel="noreferrer">
                     <button>View</button>

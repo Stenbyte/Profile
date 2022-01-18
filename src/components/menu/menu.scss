@@ -27,12 +27,48 @@
       right: 0;
     }
   }
+  .card {
+    width: 100%;
+    .box {
+      width: 2rem;
+      height: 2rem;
+      background: linear-gradient($red, $green);
+      border-radius: 50%;
+      position: absolute;
+      border: none;
+      bottom: 10%;
+      right: 9%;
+      z-index: -1;
+      animation: jump 25s infinite ease;
+
+      @keyframes jump {
+        0% {
+          bottom: 10%;
+        }
+        50% {
+          bottom: 25%;
+          right: 25%;
+          filter: hue-rotate(300deg) brightness(110%);
+        }
+        75% {
+          bottom: 7%;
+          right: 37%;
+        }
+        100% {
+          bottom: 10%;
+          right: 9%;
+        }
+      }
+    }
+  }
   ul {
     margin-top: 0;
     padding: 0;
     list-style: none;
     width: 80%;
     margin-left: 2rem;
+    position: relative;
+
     li {
       margin-bottom: 40px;
       height: 30px;

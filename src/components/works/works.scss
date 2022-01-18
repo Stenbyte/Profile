@@ -20,7 +20,7 @@
     text-decoration: none;
     top: 0;
     font-weight: 300;
-    color: $blue;
+    color: black;
     @include mobile {
       font-size: 20px;
       top: 1rem;
@@ -53,6 +53,9 @@
       align-items: center;
       justify-content: space-around;
       height: 40%;
+      .rt {
+        width: 6em;
+      }
       img {
         width: 5em;
         // filter: drop-shadow(-2px -2px 10px $red);
