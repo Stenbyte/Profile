@@ -1,9 +1,9 @@
 @import "../../global.scss";
 
 .menu {
-  width: 20vw;
+  width: 17vw;
   height: 100vh;
-  background-color: $blue;
+  background-color: $green;
   position: fixed;
   top: 0;
   right: -23vw;
@@ -38,7 +38,7 @@
         margin-bottom: 40px;
         height: 30px;
         a {
-          color: $white;
+          color: black;
           font-size: 20px;
           font-weight: 300;
           text-decoration: none;
@@ -51,7 +51,7 @@
     .box {
       width: 2rem;
       height: 2rem;
-      background: linear-gradient($red, $green);
+      background: linear-gradient($red, $blue);
       border-radius: 50%;
       position: absolute;
       border: none;
