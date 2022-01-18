@@ -13,7 +13,6 @@ function App() {
   const [num, setNum] = useState(0);
   const scrollHandle = (e) => {
     setNum(e.target.scrollTop);
-    // console.log(num);
   };
   return (
     <div className="app">

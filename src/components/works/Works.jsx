@@ -10,7 +10,6 @@ export default function Works({ num }) {
   let style = {
     transform: `translateY(${num >= 1870 ? -1 : 0}rem)`,
   };
-  console.log(window);
   return (
     <div className="works" id="works">
       <h1 className="h1">Skills</h1>
