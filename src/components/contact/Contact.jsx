@@ -52,8 +52,7 @@ export default function Contact() {
         </div>
         <div className="three">
           <p>
-            {" "}
-            Designed & created by <span>Sten Scheifel</span>
+            Designed & Created by Sten Scheifel
             <img src={person} alt="" />
           </p>
         </div>
