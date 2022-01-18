@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  background-color: $green;
   position: relative;
   @include mobile {
     // flex-direction: column;
@@ -13,9 +14,9 @@
   h1 {
     // position: absolute;
     top: 0;
-    color: #fffcff;
+    color: $blue;
     font-weight: 300;
-    font-size: 50px;
+    // font-size: 50px;
     // @include middle {
     //   font-size: 1.3rem;
     // }
@@ -24,104 +25,136 @@
       margin-top: 1rem;
     }
   }
+  .snake {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    // transition: all 1s ease-in-out;
+    animation: snak 30s infinite ease-in-out;
+    @keyframes snak {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .plus,
+  .plus1,
+  .plus2 {
+    position: absolute;
+    bottom: 10%;
+    animation: plus 10s infinite ease-in;
+    @keyframes plus {
+      from {
+        transform: rotateZ(0);
+      }
+      to {
+        transform: rotateZ(360deg);
+      }
+    }
+  }
+  .plus {
+    left: 10%;
+  }
+  .plus1 {
+    left: 13%;
+  }
+  .plus2 {
+    left: 16%;
+  }
   .common {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     gap: 3rem;
+    height: 100%;
+    width: 100%;
+    position: relative;
     @include mobile {
       flex-direction: column;
       justify-content: space-evenly;
       height: 55vh;
       gap: 1.5rem;
     }
-  }
-  .c,
-  .c1 {
-    width: 40vw;
-    min-height: 30vh;
-    border-radius: 1px;
-    box-sizing: border-box;
-    padding: 1rem;
-    background-color: white;
-    @include mobile {
-      width: 90vw;
-      min-height: 20vh;
+    .square,
+    .square1 {
+      position: absolute;
     }
-  }
-  .c {
-    // padding: 2.5rem 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 2rem;
-    @include mobile {
-      padding: 0 1rem;
+    .square {
+      top: 3%;
+      left: 5%;
     }
-    p {
-      line-height: 1.5;
-      color: $mainColor;
-      font-weight: 300;
+    .square1 {
+      bottom: 3%;
+      right: 3%;
     }
-    h3 {
-      line-height: 2;
-      font-weight: 400;
-      width: 80vw;
-      color: $mainColor;
-      @include mobile {
-        font-size: 1.5rem;
+    .one,
+    .two,
+    .three {
+      background-color: $white;
+      width: 30rem;
+      height: 8rem;
+      padding: 1em;
+      position: absolute;
+      border-radius: 5px;
+    }
+    .one {
+      top: 10%;
+      left: 10%;
+      h3 {
+        color: $red;
       }
-      @include middle {
-        font-size: 0.8rem;
+      p {
+        line-height: 1.4em;
+        color: black;
       }
-      a:link {
-        color: $mainColor;
+    }
+    .two {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h3 {
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+        span {
+          color: black;
+        }
       }
-      a:active {
-        color: $mainColor;
-      }
-      a:visited {
-        color: $mainColor;
-      }
-      a {
-        i {
-          font-size: 20px;
-          margin-right: 1rem;
-          margin-bottom: -0.2rem;
+      .links {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 30%;
+        padding-top: 1em;
+        h3 {
+          a {
+            i {
+              color: $red;
+              font-size: 2rem;
+              transition: all 0.5s ease-in-out;
+              &:hover {
+                color: $blue;
+              }
+            }
+          }
         }
       }
     }
-  }
-  .c1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 0 1rem;
-    h3 {
-      color: $mainColor;
-      @include mobile {
-        font-size: 1.3rem;
+    .three {
+      bottom: 10%;
+      right: 10%;
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: black;
       }
-    }
-    img {
-      width: 30vw;
-      margin: 0 auto;
-      @include mobile {
-        width: 60vw;
-        height: 7vh;
-      }
-      @include middle {
-        width: 70vw;
-      }
-    }
-  }
-  .footer {
-    color: #fffcff;
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    span {
-      color: $yellow;
     }
   }
 }
