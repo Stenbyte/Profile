@@ -6,7 +6,11 @@
   flex-direction: column;
   position: relative;
   background-color: $white;
-  background-blend-mode: multiply;
+  // background-blend-mode: multiply;
+  @include mobile {
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
   .long,
   .long1,
   .short,
@@ -47,9 +51,7 @@
     position: absolute;
     border-radius: 5px;
     padding: 1rem;
-
     border: 1px solid $red;
-
     transition: all 1s ease-out;
     @include mobile {
       width: 80vw;
