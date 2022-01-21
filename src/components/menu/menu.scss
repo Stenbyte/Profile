@@ -14,7 +14,7 @@
   justify-content: center;
   transition: all 1s ease-in-out;
   @include mobile {
-    width: 25vw;
+    width: 35vw;
     right: -60vw;
   }
 
@@ -43,7 +43,7 @@
           font-weight: 300;
           text-decoration: none;
           @include mobile {
-            font-size: 0.8rem;
+            font-size: 1rem;
           }
         }
       }

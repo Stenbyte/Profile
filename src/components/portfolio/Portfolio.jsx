@@ -3,6 +3,7 @@ import "./portfolio.scss";
 import tags from "../../img/tags.svg";
 import snake from "../../img/snake1.svg";
 import playBtn from "../../img/playBtn.svg";
+import arrow from "../../img/arrowR.svg";
 
 import { Projects as data } from "../../data";
 
@@ -16,6 +17,10 @@ export default function Portfolio({ num }) {
       <img src={snake} alt="" className="snake" />
       <img src={snake} alt="" className="snake1" />
       <img src={playBtn} alt="" className="play" />
+      <div className="scroll">
+        <h4>Scroll </h4>
+        <img src={arrow} alt="" />
+      </div>
       <div className="container">
         {data.map((pro, i) => (
           <div className="first" key={i}>

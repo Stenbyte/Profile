@@ -15,6 +15,11 @@
     transition: all 1s ease-in-out;
     // filter: drop-shadow(10px -10px 5px $blue);
   }
+  .cloud1 {
+    @include mobile {
+      display: none;
+    }
+  }
   .h1 {
     position: absolute;
     text-decoration: none;

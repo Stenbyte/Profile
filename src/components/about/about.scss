@@ -20,6 +20,11 @@
   .snake {
     top: 10%;
   }
+  .short,
+  .short1,
+  .snake {
+    display: none;
+  }
   .short1,
   .long1 {
     bottom: 10%;
@@ -42,13 +47,13 @@
     position: absolute;
     border-radius: 5px;
     padding: 1rem;
-    // background-color: #8e8e8e5d;
+
     border: 1px solid $red;
-    // backdrop-filter: blur(33px);
+
     transition: all 1s ease-out;
     @include mobile {
       width: 80vw;
-      // height: 20vh;
+      min-height: 80%;
     }
   }
   .container {

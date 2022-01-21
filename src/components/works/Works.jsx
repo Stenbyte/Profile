@@ -16,7 +16,7 @@ export default function Works({ num }) {
       <img
         src={cloud}
         alt=""
-        className="cloud"
+        className="cloud cloud1"
         style={{
           top: "7%",
           left: "15%",

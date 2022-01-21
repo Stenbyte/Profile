@@ -4,11 +4,10 @@
   display: flex;
   background-image: url("../../img/introBack.svg");
   background-size: 100%;
-  // transform: rotate(90deg);
   position: relative;
   inset: 0;
   @include mobile {
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
   }
   .left {
@@ -20,11 +19,22 @@
     align-items: flex-start;
     justify-content: space-evenly;
     flex-direction: column;
+    @include mobile {
+      align-items: center;
+      justify-content: center;
+      // background-color: black;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+    }
     .leftTop {
       width: 60%;
       min-height: 30%;
       padding: 1em;
-      // background-color: lightblue;
+      @include mobile {
+        width: 100%;
+        min-height: 80%;
+      }
       h1 {
         line-height: 1.7em;
         color: $white;
@@ -44,6 +54,10 @@
       justify-content: flex-start;
       padding: 1em;
       width: 70%;
+      @include mobile {
+        display: none;
+      }
+
       P {
         width: 40%;
         color: $white;
@@ -62,17 +76,22 @@
       width: 10%;
       top: 80%;
       left: 55%;
+      @include mobile {
+        width: 20%;
+      }
     }
     .dots {
       position: absolute;
       top: 90%;
       left: 7%;
       width: 60%;
+      @include mobile {
+        display: none;
+      }
     }
   }
   .center {
     position: absolute;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,12 +99,17 @@
     height: 40%;
     top: 28%;
     left: 50%;
-
+    @include mobile {
+      top: 50%;
+    }
     .me {
       width: 50%;
       filter: drop-shadow(10px 10px $red) brightness(110%);
       border: 1px $green;
       border-style: solid;
+      @include mobile {
+        width: 100%;
+      }
     }
   }
   .right {
@@ -98,6 +122,10 @@
       width: 20%;
       top: 10%;
       left: -1%;
+      @include mobile {
+        width: 50%;
+        top: 20%;
+      }
     }
     .dots1 {
       transform: rotate(90deg);
@@ -111,6 +139,9 @@
       top: 80%;
       left: 30%;
       animation: move 10s infinite ease-in-out;
+      @include mobile {
+        top: 90%;
+      }
       @keyframes move {
         from {
           transform: rotate(0deg);
