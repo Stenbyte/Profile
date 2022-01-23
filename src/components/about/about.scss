@@ -27,7 +27,9 @@
   .short,
   .short1,
   .snake {
-    display: none;
+    @include mobile {
+      display: none;
+    }
   }
   .short1,
   .long1 {
